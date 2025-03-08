@@ -1,3 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
+
+/*!* Table pagination: active page highlight *!*/
+/*.mary-table-pagination span[aria-current="page"] > span {*/
+/*    @apply bg-primary text-base-100*/
+/*}*/
+
+/*!* Table pagination: for dark mode*!*/
+/*.mary-table-pagination span[aria-disabled="true"] span {*/
+/*    @apply bg-inherit*/
+/*}*/
+
+/*!* Table pagination: for dark mode *!*/
+/*.mary-table-pagination button {*/
+/*    @apply bg-base-100*/
+/*}*/
+
+@import "tailwindcss";
+@source "../views";
+@plugin "daisyui";
+
+/*@source "../views";*/
+
+@font-face {
+    font-family: PPPlayground;
+    src: url("/public/fonts/PPPlayground/PPPlayground-Thin.otf") format("opentype");
+}
+
+@font-face {
+    font-family: NotoSerifDisplay;
+    font-weight: 100;
+    src: url("/public/fonts/NotoSerifDisplay/NotoSerifDisplay-ExtraLight.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: NotoSerifDisplay;
+    font-weight: 400;
+    src: url("/public/fonts/NotoSerifDisplay/NotoSerifDisplay-Regular.ttf") format('truetype');
+}
+
+
+
+.ppplayground {
+    font-family: 'PPPlayground'
+}
+
+.notoserifdisplay{
+    font-family: 'NotoSerifDisplay';
+}

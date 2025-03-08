@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('guest_nutritional_requirements', function (Blueprint $table) {
+        Schema::create('guest_nights', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('guest_id');
-            $table->foreignId('nutritional_requirements_id');
+            $table->tinyInteger('night');
             $table->timestamps();
             $table->softDeletes();
         });
@@ -25,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('guest_nutritional_requirements');
+        Schema::dropIfExists('guest_nights');
     }
 };

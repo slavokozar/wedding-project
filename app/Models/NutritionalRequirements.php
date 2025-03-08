@@ -4,10 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class GuestRestriction extends Model
+class NutritionalRequirements extends Model
 {
     protected $fillable = [
-        "name"
+        "name",
+        "main"
     ];
 
     public function guests(){
