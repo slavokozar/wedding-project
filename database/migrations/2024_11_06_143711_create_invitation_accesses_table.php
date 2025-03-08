@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('invitation_accesses', function (Blueprint $table) {
             $table->id();
             $table->foreignId('invitation_id');
-            $table->timestamp('opened_at');
+            $table->string('ip_address');
+            $table->text('agent');
             $table->timestamps();
         });
     }

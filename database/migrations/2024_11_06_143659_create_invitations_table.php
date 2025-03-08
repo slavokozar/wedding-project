@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('guest_id');
             $table->string('code')->unique();
+            $table->string('label');
             $table->timestamps();
             $table->softDeletes();
         });

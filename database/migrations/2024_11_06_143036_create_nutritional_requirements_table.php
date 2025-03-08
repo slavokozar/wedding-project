@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('nutritional_requirements', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->boolean('main');
+            $table->boolean('main')->default(false);
             $table->timestamps();
             $table->softDeletes();
         });
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('guest_restrictions');
+        Schema::dropIfExists('nutritional_requirements');
     }
 };

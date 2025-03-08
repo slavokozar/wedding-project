@@ -36,12 +36,16 @@ class Guest extends Model
         return $this->belongsTo(Guest::class);
     }
 
+    public function children(){
+        return $this->hasMany(Guest::class, 'parent_id');
+    }
+
     public function table(){
         return $this->belongsTo(Guest::class);
     }
 
     public function restrictions(){
-        return $this->belongsToMany(GuestRestriction::class);
+        return $this->belongsToMany(NutritionalRequirements::class);
     }
 
     public function tags(){

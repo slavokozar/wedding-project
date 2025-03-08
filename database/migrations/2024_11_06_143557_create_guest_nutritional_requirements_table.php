@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('guest_guest_restriction');
+        Schema::dropIfExists('guest_nutritional_requirements');
     }
 };

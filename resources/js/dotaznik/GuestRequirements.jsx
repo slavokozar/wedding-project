@@ -1,79 +1,204 @@
 import {useEffect, useState} from "react";
-import Email from "./email.jsx";
+import Email from "./Email.jsx";
 
 import axios from "axios";
 import {Description, Field, Label, Switch} from "@headlessui/react";
 
-function GuestRequirements({name, restrictions}) {
+function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestrictions}) {
     const [enabled, setEnabled] = useState(false)
-    const [moreRestrictions, setEnabled] = useState(false)
+    const [moreRequirements, setMoreRequirements] = useState(false)
 
     if (restrictions == null) return null;
 
     return (
         <>
-    <Field className="flex items-center justify-between">
-          <span className="flex grow flex-col">
-            <Label as="span" passive className="text-sm/6 font-medium text-gray-900">
-              Available to hire
-            </Label>
-            <Description as="span" className="text-sm text-gray-500">
-              Nulla amet tempus sit accumsan. Aliquet turpis sed sit lacinia.
-            </Description>
-          </span>
-        <Switch
-            checked={enabled}
-            onChange={setEnabled}
-            className="group relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 focus:outline-hidden data-checked:bg-indigo-600"
-        >
-            <span
-                aria-hidden="true"
-                className="pointer-events-none inline-block size-5 transform rounded-full bg-white ring-0 shadow-sm transition duration-200 ease-in-out group-data-checked:translate-x-5"
-            />
-        </Switch>
+            <Field className="flex items-center justify-between py-3">
 
+                <span className="flex grow flex-col">
+                    <Label as="span" passive className="text-sm/6 font-medium text-gray-900">{name} má špeciálne stravovacie požiadavky</Label>
+                </span>
+                <Switch
+                    checked={enabled}
+                    onChange={setEnabled}
+                    className="group relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 focus:outline-hidden data-checked:bg-indigo-600"
+                >
+                    <span
+                        aria-hidden="true"
+                        className="pointer-events-none inline-block size-5 transform rounded-full bg-white ring-0 shadow-sm transition duration-200 ease-in-out group-data-checked:translate-x-5"
+                    />
+                </Switch>
+            </Field>
 
-    </Field>
-    <div className="mt-4 sm:col-span-2 sm:mt-0">
-        <div className="max-w-lg space-y-6">
             {
-                restrictions.map(restriction => (
-                    <div className="flex gap-3">
-                        <div className="flex h-6 shrink-0 items-center">
-                            <div className="group grid size-4 grid-cols-1">
-                                <input id="comments" aria-describedby="comments-description"
-                                       name="comments" type="checkbox" checked=""
-                                       className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"/>
-                                <svg
-                                    className="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
-                                    viewBox="0 0 14 14" fill="none">
-                                    <path
-                                        className="opacity-0 group-has-checked:opacity-100"
-                                        d="M3 8L6 11L11 3.5" stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path
-                                        className="opacity-0 group-has-indeterminate:opacity-100"
-                                        d="M3 7H11" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="text-sm/6">
-                            <label htmlFor="comments"
-                                   className="font-medium text-gray-900">{restriction.name}</label>
-                            {/*<p id="comments-description" className="text-gray-500">Get*/}
-                            {/*    notified when*/}
-                            {/*    someones posts a comment on a posting.</p>*/}
-                        </div>
-                    </div>
-                ))
+                enabled && (
+                    <fieldset className="ml-3">
+                        {
+                            restrictions
+                                .filter(restriction => restriction.main)
+                                .map(restriction => (
+                                    <RequirementCheck
+                                        requirement={restriction}
+                                        checked={guestRestrictions.indexOf(restriction.id) >= 0}
+                                        setChecked={(checked) => {
+                                            if(checked){
+                                                setGuestRestrictions([...guestRestrictions, restriction.id])
+                                            }else{
+                                                setGuestRestrictions(guestRestrictions.filter((r) => r !== restriction.id))
+                                            }
+                                        }}
+                                    />
+                                ))
+                        }
+                        {
+                            moreRequirements ? (
+                                <>
+                                    {
+                                        restrictions
+                                            .filter(restriction => !restriction.main)
+                                            .map(restriction => (
+                                                <RequirementCheck
+                                                    requirement={restriction}
+                                                    checked={guestRestrictions.indexOf(restriction.id) >= 0}
+                                                    setChecked={(checked) => {
+                                                        if(checked){
+                                                            setGuestRestrictions([...guestRestrictions, restriction.id])
+                                                        }else{
+                                                            setGuestRestrictions(guestRestrictions.filter((r) => r !== restriction.id))
+                                                        }
+                                                    }}
+                                                />
+                                            ))
+                                    }
+                                    <button
+                                        className="rounded-md border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none"
+                                        type="button"
+                                        onClick={(e) => {
+                                            setMoreRequirements(false);
+                                        }}
+                                    >
+                                        Menej...
+                                    </button>
+                                </>
+                            ) : (
+                                <button
+                                    className="rounded-md border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none"
+                                    type="button"
+                                    onClick={(e) => {
+                                        setMoreRequirements(true);
+                                    }}
+                                >
+                                    Ďalšie...
+                                </button>
+                            )
+                        }
+                    </fieldset>
+                )
             }
-        </div>
-    </div>
 
-</>
-)
+
+            {/*<div className="mt-4 sm:col-span-2 sm:mt-0">*/}
+            {/*    <div className="max-w-lg space-y-6">*/}
+            {/*        */}
+            {/*        {*/}
+            {/*            moreRequirements ? (*/}
+            {/*                restrictions*/}
+            {/*                    .filter(restriction => !restriction.main)*/}
+            {/*                    .map(restriction => (*/}
+            {/*                        <div className="flex gap-3">*/}
+            {/*                            <div className="flex h-6 shrink-0 items-center">*/}
+            {/*                                <div className="group grid size-4 grid-cols-1">*/}
+            {/*                                    <input id="comments" aria-describedby="comments-description"*/}
+            {/*                                           name="comments" type="checkbox" checked=""*/}
+            {/*                                           className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"/>*/}
+            {/*                                    <svg*/}
+            {/*                                        className="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"*/}
+            {/*                                        viewBox="0 0 14 14" fill="none">*/}
+            {/*                                        <path*/}
+            {/*                                            className="opacity-0 group-has-checked:opacity-100"*/}
+            {/*                                            d="M3 8L6 11L11 3.5" stroke-width="2"*/}
+            {/*                                            stroke-linecap="round"*/}
+            {/*                                            stroke-linejoin="round"></path>*/}
+            {/*                                        <path*/}
+            {/*                                            className="opacity-0 group-has-indeterminate:opacity-100"*/}
+            {/*                                            d="M3 7H11" stroke-width="2" stroke-linecap="round"*/}
+            {/*                                            stroke-linejoin="round"></path>*/}
+            {/*                                    </svg>*/}
+            {/*                                </div>*/}
+            {/*                            </div>*/}
+            {/*                            <div className="text-sm/6">*/}
+            {/*                                <label htmlFor="comments"*/}
+            {/*                                       className="font-medium text-gray-900">{restriction.name}</label>*/}
+            {/*                                /!*<p id="comments-description" className="text-gray-500">Get*!/*/}
+            {/*                                /!*    notified when*!/*/}
+            {/*                                /!*    someones posts a comment on a posting.</p>*!/*/}
+            {/*                            </div>*/}
+            {/*                        </div>*/}
+            {/*                    ))*/}
+            {/*            ) : (*/}
+            {/*                <button*/}
+            {/*                    className="rounded-md border border-transparent py-2 px-4 text-center text-sm transition-all text-slate-600 hover:bg-slate-100 focus:bg-slate-100 active:bg-slate-100 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"*/}
+            {/*                    type="button"*/}
+            {/*                    onClick={(e) => {*/}
+            {/*                        setMoreRequirements(true);*/}
+            {/*                    }}*/}
+            {/*                >*/}
+            {/*                    Viac...*/}
+            {/*                </button>*/}
+            {/*            )*/}
+            {/*        }*/}
+            {/*    </div>*/}
+            {/*</div>*/}
+
+
+        </>
+    )
+}
+
+
+function RequirementCheck({requirement, checked, setChecked}) {
+    return (
+        <div key={requirement.id} className="relative flex gap-3 py-1">
+            <div className="min-w-0 flex-1 text-sm/6">
+                <label htmlFor={`person-${requirement.id}`}
+                       className="font-medium text-gray-900 select-none">
+                    {requirement.name}
+                </label>
+            </div>
+            <div className="flex h-6 shrink-0 items-center">
+                <div className="group grid size-4 grid-cols-1">
+                    <input
+                        // defaultChecked={person.selected}
+                        id={`restriction-${requirement.id}`}
+                        name={`restriction-${requirement.id}`}
+                        type="checkbox"
+                        className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                        checked={checked}
+                        onChange={(e) => setChecked(e.target.checked)}
+                    />
+                    <svg
+                        fill="none"
+                        viewBox="0 0 14 14"
+                        className="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                    >
+                        <path
+                            d="M3 8L6 11L11 3.5"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="opacity-0 group-has-checked:opacity-100"
+                        />
+                        <path
+                            d="M3 7H11"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="opacity-0 group-has-indeterminate:opacity-100"
+                        />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default GuestRequirements;
