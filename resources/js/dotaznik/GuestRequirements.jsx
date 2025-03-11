@@ -15,12 +15,14 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
             <Field className="flex items-center justify-between py-3">
 
                 <span className="flex grow flex-col">
-                    <Label as="span" passive className="text-sm/6 font-medium text-gray-900">{name} má špeciálne stravovacie požiadavky</Label>
+                    <Label as="span" passive className="text-sm/6 font-medium text-gray-700 notoserifdisplay font-thin">
+                        <span className="ppplayground text-3xl text-gray-900">{name}</span> má špeciálne stravovacie požiadavky
+                    </Label>
                 </span>
                 <Switch
                     checked={enabled}
                     onChange={setEnabled}
-                    className="group relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 focus:outline-hidden data-checked:bg-indigo-600"
+                    className="group relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 transition-colors duration-200 ease-in-out focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 focus:outline-hidden data-checked:bg-gray-700"
                 >
                     <span
                         aria-hidden="true"
@@ -70,7 +72,7 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                             ))
                                     }
                                     <button
-                                        className="rounded-md border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none"
+                                        className="border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none text-gray-700 select-none notoserifdisplay font-thin"
                                         type="button"
                                         onClick={(e) => {
                                             setMoreRequirements(false);
@@ -81,7 +83,7 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                 </>
                             ) : (
                                 <button
-                                    className="rounded-md border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none"
+                                    className="border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none text-gray-700 select-none notoserifdisplay font-thin"
                                     type="button"
                                     onClick={(e) => {
                                         setMoreRequirements(true);
@@ -160,7 +162,7 @@ function RequirementCheck({requirement, checked, setChecked}) {
         <div key={requirement.id} className="relative flex gap-3 py-1">
             <div className="min-w-0 flex-1 text-sm/6">
                 <label htmlFor={`person-${requirement.id}`}
-                       className="font-medium text-gray-900 select-none">
+                       className="text-gray-700 select-none notoserifdisplay font-thin">
                     {requirement.name}
                 </label>
             </div>
@@ -171,7 +173,7 @@ function RequirementCheck({requirement, checked, setChecked}) {
                         id={`restriction-${requirement.id}`}
                         name={`restriction-${requirement.id}`}
                         type="checkbox"
-                        className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                        className="col-start-1 row-start-1 appearance-none rounded-sm border border-gray-300 bg-white checked:border-gray-600 checked:bg-gray-800 indeterminate:border-gray-600 indeterminate:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                         checked={checked}
                         onChange={(e) => setChecked(e.target.checked)}
                     />
