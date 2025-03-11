@@ -52,15 +52,15 @@
                 </h1>
             </div>
 
-            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[640px]"/>
-            <h2>
+            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[640px]">
+            <h2 class="text-gray-900">
                 {{ $invitation->label }}
             </h2>
 
             <ul>
-                <li>{{ $invitation->mainGuest->name }}</li>
+                <li class="text-gray-900">{{ $invitation->mainGuest->name }}</li>
                 @foreach($invitation->mainGuest->children as $guest)
-                    <li>{{ $guest->name }}</li>
+                    <li class="text-gray-900">{{ $guest->name }}</li>
                 @endforeach
             </ul>
 
