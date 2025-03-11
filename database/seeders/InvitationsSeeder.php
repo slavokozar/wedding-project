@@ -29,9 +29,10 @@ class InvitationsSeeder extends Seeder
 //                var_dump($mainGuest->toJson());
 
                 $lastNames = collect($mainGuest->lastName)->concat($mainGuest->children->pluck('lastName'));
-                $firstNames = collect($mainGuest->nick !== null ? $mainGuest->nick : $mainGuest->firstName)->concat($mainGuest->children->map(
-                    function($guest) { return $guest->nick !== null ? $guest->nick : $guest->firstName; }
-                ));
+                $firstNames = collect(!empty($mainGuest->nick) ? $mainGuest->nick : $mainGuest->firstName)
+                    ->concat($mainGuest->children->map(
+                        function($guest) { return !empty($guest->nick) ? $guest->nick : $guest->firstName; }
+                    ));
 
                 print_r($firstNames);
                 print_r($lastNames);
