@@ -52,10 +52,23 @@
                 </h1>
             </div>
 
-            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[640px]">
-                <div id="dotaznik-root" class="bg-white px-6 py-12 shadow-sm sm:px-12">
-                    <noscript>You need to enable JavaScript to run this app.</noscript>
-                </div>
+            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[640px]"/>
+            <h2>
+                {{ $invitation->label }}
+            </h2>
+
+            <ul>
+                <li>{{ $invitation->mainGuest->name }}</li>
+                @foreach($invitation->mainGuest->children as $guest)
+                    <li>{{ $guest->name }}</li>
+                @endforeach
+            </ul>
+
+
+
+{{--                <div id="dotaznik-root" class="bg-white px-6 py-12 shadow-sm sm:px-12">--}}
+{{--                    <noscript>You need to enable JavaScript to run this app.</noscript>--}}
+{{--                </div>--}}
             </div>
         </div>
 
