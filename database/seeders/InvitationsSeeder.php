@@ -15,8 +15,6 @@ class InvitationsSeeder extends Seeder
      */
     public function run(): void
     {
-        Invitation::where(1)->delete();
-
         $mainGuests = Guest::whereNull('parent_id')->get();
 
         $firstName = null;
