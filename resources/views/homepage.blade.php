@@ -13,7 +13,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Bude svadba! Kožárovci</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -811,7 +811,7 @@
                             </p>
 
 
-                            <div class="mt-10 flex flex-col-reverse md:block md:items-center gap-x-6">
+                            <div class="mt-10 flex flex-col-reverse sm:block md:items-center gap-x-6">
                                 <a href="{{ route("invitation-form") }}"
                                    class="bg-gray-700 px-3.5 py-2.5 mb-4  text-sm font-semibold text-white shadow-xs hover:bg-gray-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">
                                     Mám pozvánku k svadobnému stolu

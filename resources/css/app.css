@@ -49,3 +49,7 @@
 .notoserifdisplay{
     font-family: 'NotoSerifDisplay';
 }
+
+.flex-col-reverse {
+    flex-direction: column-reverse;
+}
