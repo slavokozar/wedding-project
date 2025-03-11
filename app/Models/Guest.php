@@ -24,7 +24,7 @@ class Guest extends Model
                     $name[] = $attributes['middleName'];
                 }
                 $name[] = $attributes['lastName'];
-                if($attributes['nick'] !== null) {
+                if(!empty($attributes['nick'])) {
                     $name[] = '( ' . $attributes['nick'] . ' )';
                 }
                 return join(" ", $name);

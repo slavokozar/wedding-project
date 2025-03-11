@@ -23,7 +23,7 @@ class InvitationsSeeder extends Seeder
 
         foreach ($mainGuests as $mainGuest) {
             var_dump($mainGuest->toJson());
-            $label = $mainGuest->name;
+            $label = !empty($mainGuest->nick) ? $mainGuest->nick : $mainGuest->firstName;
 
             if ($mainGuest->children->count() >= 1) {
 //                var_dump($mainGuest->toJson());
