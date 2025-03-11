@@ -15,6 +15,7 @@ class InvitationsSeeder extends Seeder
      */
     public function run(): void
     {
+
         $mainGuests = Guest::whereNull('parent_id')->get();
 
         $firstName = null;
@@ -32,7 +33,8 @@ class InvitationsSeeder extends Seeder
                     function($guest) { return $guest->nick !== null ? $guest->nick : $guest->firstName; }
                 ));
 
-//                print_r($lastNames);
+                print_r($firstNames);
+                print_r($lastNames);
 
 
                 $shortestLastName = $lastNames->reduce(function (?string $carry, string $item) {
@@ -47,22 +49,22 @@ class InvitationsSeeder extends Seeder
                 }, true);
 
 
-                if($firstNames->count() > 2){
+                if ($firstNames->count() > 2) {
                     $label = $shortestLastName;
-
-                } else if ($allLastNamesStartsSame) {
+                }
+                if ($allLastNamesStartsSame) {
+//                    if($firstNames->count() > 2){
                     $popFirstName = $firstNames->pop();
-                    $label = $firstNames->join(", ") . " a " . $popFirstName . " " . $shortestLastName;
-
+                    $label = $firstNames->join(", ") . " a " . $popFirstName;
 //                    }else{
 //                        $label = $firstNames->join(" a ") . " " . $shortestLastName;
 //                    }
                 } else {
-                    $names = collect($mainGuest->name)->concat($mainGuest->children->pluck('name'));
+//                    $names = collect($mainGuest->name)->concat($mainGuest->children->pluck('name'));
 
-                    $popName = $names->pop();
+                    $popName = $firstNames->pop();
 
-                    $label = $names->join(", ") . " a " . $popName;
+                    $label = $firstNames->join(", ") . " a " . $popName;
                 }
 
 
