@@ -15,6 +15,7 @@ class InvitationsSeeder extends Seeder
      */
     public function run(): void
     {
+        Invitation::where(1)->delete();
 
         $mainGuests = Guest::whereNull('parent_id')->get();
 
@@ -29,7 +30,9 @@ class InvitationsSeeder extends Seeder
 //                var_dump($mainGuest->toJson());
 
                 $lastNames = collect($mainGuest->lastName)->concat($mainGuest->children->pluck('lastName'));
-                $firstNames = collect($mainGuest->firstName)->concat($mainGuest->children->pluck('firstName'));
+                $firstNames = collect($mainGuest->nick !== null ? $mainGuest->nick : $mainGuest->firstName)->concat($mainGuest->children->map(
+                    function($guest) { return $guest->nick !== null ? $guest->nick : $guest->firstName; }
+                ));
 
 //                print_r($lastNames);
 
