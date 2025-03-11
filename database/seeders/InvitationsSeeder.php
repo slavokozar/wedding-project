@@ -49,13 +49,15 @@ class InvitationsSeeder extends Seeder
                 }, true);
 
 
-                if ($allLastNamesStartsSame) {
-//                    if($firstNames->count() > 2){
-                    $popFirstName = $firstNames->pop();
-                    $label = $firstNames->join(", ") . " a " . $popFirstName . " " . $shortestLastName;
-//                    }else{
-//                        $label = $firstNames->join(" a ") . " " . $shortestLastName;
-//                    }
+                if($firstNames->count() > 2){
+                    $label = $shortestLastName;
+//                } else if ($allLastNamesStartsSame) {
+////                    if($firstNames->count() > 2){
+//                    $popFirstName = $firstNames->pop();
+//                    $label = $firstNames->join(", ") . " a " . $popFirstName . " " . $shortestLastName;
+////                    }else{
+////                        $label = $firstNames->join(" a ") . " " . $shortestLastName;
+////                    }
                 } else {
                     $names = collect($mainGuest->name)->concat($mainGuest->children->pluck('name'));
 
