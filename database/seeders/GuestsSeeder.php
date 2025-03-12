@@ -28,13 +28,13 @@ class GuestsSeeder extends Seeder
 
             print_r($guestCreateData);
 
-//            $guest = Guest::create();
-//            if (intval($guestData->main) > 0) {
-//                $parentGuest = $guest;
-//            } else {
-//                $guest->parent_id = $parentGuest->id;
-//                $guest->save();
-//            }
+            $guest = Guest::create($guestCreateData);
+            if (intval($guestData->main) > 0) {
+                $parentGuest = $guest;
+            } else {
+                $guest->parent_id = $parentGuest->id;
+                $guest->save();
+            }
         }
     }
 }
