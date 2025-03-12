@@ -51,4 +51,8 @@ class Guest extends Model
     public function tags(){
         return $this->belongsToMany(GuestTag::class);
     }
+
+    public function invitation(){
+        return $this->hasOne(Invitation::class, 'guest_id');
+    }
 }
