@@ -23,7 +23,10 @@ class GuestsSeeder extends Seeder
         $parentGuest = null;
 
         foreach ($guests as $guestData) {
-            $guest = Guest::create((array) $guestData);
+            $guestCreateData = (array) $guestData;
+            unset($guestCreateData['main']);
+
+            $guest = Guest::create();
             if (intval($guestData->main) > 0) {
                 $parentGuest = $guest;
             } else {
