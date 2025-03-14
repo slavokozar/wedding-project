@@ -27,7 +27,13 @@ function Questionaire(Props) {
     const getCode = () => {
         const href = window.location.href;
 
-        const code = href.substring(href.lastIndexOf('/') + 1);
+        const indexOfLastSlash = href.lastIndexOf('/');
+        const indexOfQuestionMark = href.indexOf('?');
+
+        const code = href.substring(indexOfLastSlash + 1, indexOfQuestionMark);
+
+        console.log({code});
+
         return code;
     }
 
