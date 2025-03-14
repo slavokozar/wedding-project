@@ -24,7 +24,7 @@ Route::prefix('manag')->middleware('auth')->group(function () {
     // });
 
     Volt::route('/guests', 'guests.index')->name('admin.guests');
-    Volt::route('/invitations', 'invitations.index')->name('admin.guests');
+    Volt::route('/invitations', 'invitations.index')->name('admin.invitations');
     Route::get('/accesses', function (Request $request) {
         $accesses = InvitationAccess::with('invitation.mainGuest')->orderBy('created_at', 'desc')->paginate(20);
 
