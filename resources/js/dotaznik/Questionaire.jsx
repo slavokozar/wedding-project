@@ -11,39 +11,40 @@ function Questionaire(Props) {
     const [emails, setEmails] = useState([]);
     const [guestRestrictions, setGuestRestrictions] = useState(null);
     const [nights, setNights] = useState([false, true, false]);
+    /*
+     - email
+     - stravovace obmedzenia
+        - pr kazdeho ucastnika z pozvanky
+        - checkboxy pre jednotlive obmedzenia
 
-    console.log({
-        emails,
-        guestRestrictions,
-        nights
-    })
-/*
- - email
- - stravovace obmedzenia
-    - pr kazdeho ucastnika z pozvanky
-    - checkboxy pre jednotlive obmedzenia
-
-- ubytovanie
-    - mate zaujem o ubytovanie uz zo stvrtka na piatok?
-    - mate zaujem o ubytovanie aj na dalsiu noc po svadbe?
+    - ubytovanie
+        - mate zaujem o ubytovanie uz zo stvrtka na piatok?
+        - mate zaujem o ubytovanie aj na dalsiu noc po svadbe?
 
 
 
- */
+     */
+    const getCode = () => {
+        const href = window.location.href;
 
+        const code = href.substring(href.lastIndexOf('/') + 1);
+        return code;
+    }
 
-    useEffect( () => {
+    useEffect(() => {
 
         async function loadRestrictions() {
-            const response= await axios.get("/api/restrictions");
+            const response = await axios.get("/api/restrictions");
 
             console.log(response);
             setRestrictions(response.data);
 
         }
+
         loadRestrictions();
+
         async function loadInvitation() {
-            const response= await axios.get("/api/invitation");
+            const response = await axios.post("/api/invitation", {code: getCode()});
 
             setInvitation(response.data)
 
@@ -56,30 +57,59 @@ function Questionaire(Props) {
                 }, {})
             )
         }
+
         loadInvitation();
     }, []);
 
 
-    if(restrictions == null || invitation == null) return null;
+    if (restrictions == null || invitation == null) return null;
+
+    async function updateInvitation() {
+        console.log({
+            emails,
+            guestRestrictions,
+            nights
+        });
+
+        const response = await axios.put("/api/invitation", {
+            code: getCode(),
+            emails: emails.join(','),
+            nights: nights.map((night, index) => index + 1).filter((night, index) => nights[index])
+        });
+
+        console.log(response);
+    }
 
     return (
+        <form
+            onSubmit={(e) => {
+                e.preventDefault();
 
+                updateInvitation();
+            }}
+        >
+            <span  className="notoserifdisplay text-gray-700 font-thin mb-5">Ahoj{invitation.main_guest.children.length > 0 ? "te" : ""},</span>
+            <h1 className="ppplayground text-6xl text-gray-900 mb-5">{invitation.label}</h1>
+            <p className="mb-1 notoserifdisplay font-thin text-gray-700  mb-3">
+                Vyplň{invitation.main_guest.children.length > 0 ? "te" : ""} nám prosím odpovede na niekoľko rýchlych
+                otázok,<br/> aby sme mohli všetko dokonale naplánovať.
+            </p>
 
-        <>
-            <h2 className="mb-3 text-xl font-semibold tracking-tight text-gray-900 sm:text-3xl notoserifdisplay font-thin">Email</h2>
+            <h2 className="mt-8 mb-3 text-lg font-semibold tracking-tight text-gray-900  notoserifdisplay">Email</h2>
             <p className="mb-1 notoserifdisplay font-thin text-gray-700">
-                Vyplňte nám prosím emailovú adresu (prípadne adresy) ktorú zaradíme do svadobného
-                newslettra a budeme Vám na ňu posielať organizačné informácie potrebné pre hladký
-                priebeh svadby.
+                Emailovú adresu (prípadne adresy) zaradíme do <strong>svadobného newslettra</strong> a budeme
+                na ňu priebežne posielať <strong>organizačné informácie</strong> potrebné pre hladký priebeh nášho
+                veľkého dňa.
             </p>
 
 
             <Email emails={emails} setEmails={setEmails}/>
 
-            <h2 className="my-3 text-xl font-semibold tracking-tight text-gray-900 sm:text-3xl notoserifdisplay font-thin">Stravovanie</h2>
+            <h2 className="mt-8 mb-3 text-lg font-semibold tracking-tight text-gray-900 sm:text-lg notoserifdisplay">Stravovanie</h2>
 
             <p className="mb-1 notoserifdisplay font-thin text-gray-700">
-                Ste vegan, celiatik, alebo alergik? To potrebujeme vedieť...
+                {invitation.main_guest.children.length > 0 ? "Je niekto z vás" : "Si"} vegán, celiatik, alebo
+                alergik?
             </p>
 
             <fieldset>
@@ -89,7 +119,7 @@ function Questionaire(Props) {
                         {
                             invitation !== null ? (
                                 <GuestRequirements
-                                    name={invitation.main_guest.firstName}
+                                    name={invitation.main_guest.children.length > 0 ? invitation.main_guest.firstName : null}
                                     restrictions={restrictions}
                                     guestRestrictions={guestRestrictions[invitation.main_guest.id]}
                                     setGuestRestrictions={(restrictions) => {
@@ -128,30 +158,37 @@ function Questionaire(Props) {
                 </div>
             </fieldset>
 
-            <h2 className="my-3 text-xl font-semibold tracking-tight text-gray-900 sm:text-3xl notoserifdisplay font-thin">Ubytovanie</h2>
+            <h2 className="mt-8 mb-3 text-lg font-semibold tracking-tight text-gray-900  notoserifdisplay ">Ubytovanie</h2>
 
-            <p className="text-gray-500 mb-1 notoserifdisplay font-thin">
-                Svadba sa bude konať v Piatok 29. Augusta v Trenčianských Tepliciach.
-                Veľmi radi pre Vás sprostredkujeme ubytovanie v blízkosti konania svadby.
+            <p className="text-gray-500 mb-3 notoserifdisplay font-thin">
+                Svadobná hostina sa bude konať v <strong>piatok 29. Augusta</strong> v Trenčianskych Tepliciach.
+                <br/>
+                Veľmi radi pre Vás sprostredkujeme ubytovanie v blízkosti konania hostiny.
             </p>
             <p className="text-gray-500 mb-1 notoserifdisplay font-thin">
-                Dajte nám prosím vedieť, či do miesta konania svadby dorazíte už večer pred svadbou, alebo až v deň konania svadby.
+                Dajte nám prosím vedieť, či do miesta konania svadby <strong>dorazíte už večer pred svadbou</strong>, alebo až v deň
+                konania svadby.
             </p>
             <p className="text-gray-500 mb-1 notoserifdisplay font-thin">
-                Taktiež na deň po svadbe - Sobotu 30. 8. máme v pláne menšiu afterparty.
-                V prípade, že by ste si s nami chceli užiť víkend naplno je možné ostať v Trenčianských Tepliciach až do Nedele.
+                Taktiež na deň po svadbe - <strong>sobotu 30. 8.</strong> máme v pláne menšiu <strong>afterparty</strong>.
+                <br/>
+                V prípade, že by ste si s nami chceli užiť víkend naplno je možné ostať v Trenčianských Tepliciach
+                až do
+                Nedele.
             </p>
 
             <fieldset className="border-t border-b border-gray-200">
                 <legend className="sr-only">Notifications</legend>
                 <div className="divide-y divide-gray-200">
                     <div className="relative flex gap-3 pt-3.5 pb-4">
-                        <div className="min-w-0 flex-1 text-sm/6">
+                        <div className="min-w-0 flex-1">
                             <label htmlFor="comments" className="font-medium text-gray-900 notoserifdisplay">
-                                Ubytovanie v noci z 28. na 29. Augusta
+                                Ubytovanie zo štvrtka 28. na piatok 29. Augusta
+                                <br/>
+                                ( noc pred svadbou )
                             </label>
                             <p id="comments-description" className="text-gray-500 notoserifdisplay font-thin">
-                                Zaškrtnite prosím v prípade, že máte zájem do Trenčianských Teplíc
+                                Zaškrtnite prosím v prípade, že máte zájem do Trenčianskych Teplíc
                                 doraziť večer pred svadbou.
                             </p>
                         </div>
@@ -163,7 +200,7 @@ function Questionaire(Props) {
                                     name="comments"
                                     type="checkbox"
                                     aria-describedby="comments-description"
-                                    className="col-start-1 row-start-1 appearance-none border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                                    className="col-start-1 row-start-1 appearance-none border border-gray-300 bg-white checked:border-gray-600 checked:bg-gray-600 indeterminate:border-gray-600 indeterminate:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                     checked={nights[0]}
                                     onChange={(e) => {
                                         setNights(
@@ -197,13 +234,13 @@ function Questionaire(Props) {
                         </div>
                     </div>
                     <div className="relative flex gap-3 pt-3.5 pb-4">
-                        <div className="min-w-0 flex-1 text-sm/6">
+                        <div className="min-w-0 flex-1">
                             <label htmlFor="offers" className="font-medium text-gray-900 notoserifdisplay">
-                                Ubytovanie v noci z 30. na 31. Augusta
+                                Ubytovanie zo soboty 30. na nedeľu 31. Augusta
                             </label>
                             <p id="offers-description" className="text-gray-500 notoserifdisplay font-thin">
                                 Zaškrtnite v prípade, že máte zájem predĺžiť si pobyt v
-                                Trenčianských Tepliciach až do Nedele.
+                                Trenčianskych Tepliciach až do nedele.
                             </p>
                         </div>
                         <div className="flex h-6 shrink-0 items-center">
@@ -213,7 +250,7 @@ function Questionaire(Props) {
                                     name="offers"
                                     type="checkbox"
                                     aria-describedby="offers-description"
-                                    className="col-start-1 row-start-1 appearance-none border border-gray-300 bg-white checked:border-indigo-600 checked:bg-indigo-600 indeterminate:border-indigo-600 indeterminate:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                                    className="col-start-1 row-start-1 appearance-none border border-gray-300 bg-white checked:border-gray-600 checked:bg-gray-600 indeterminate:border-gray-600 indeterminate:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
                                     checked={nights[2]}
                                     onChange={(e) => {
                                         setNights(
@@ -248,7 +285,12 @@ function Questionaire(Props) {
                     </div>
                 </div>
             </fieldset>
-        </>
+
+            <button
+                className="mt-8 block py-2.5 px-3.5 text-center text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 sm:mt-10 bg-gray-600 text-white shadow-sm hover:bg-gray-500">
+                Odoslať
+            </button>
+        </form>
 
 
     )

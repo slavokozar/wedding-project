@@ -8,7 +8,11 @@ class InvitationAccess extends Model
 {
     protected $fillable = [
         'ip_address',
-        'browser',
-        'device'
+        'agent'
     ];
+
+    public function invitation()
+    {
+        return $this->belongsTo(Invitation::class);
+    }
 }

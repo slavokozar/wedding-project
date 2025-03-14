@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Invitation extends Model
 {
+    protected $fillable = [
+        "emails"
+    ];
+
     public function mainGuest()
     {
         return $this->belongsTo(Guest::class, 'guest_id');
@@ -14,5 +18,10 @@ class Invitation extends Model
     public function accesses()
     {
         return $this->hasMany(InvitationAccess::class);
+    }
+
+    public function nights()
+    {
+        return $this->hasMany(InvitationNight::class);
     }
 }

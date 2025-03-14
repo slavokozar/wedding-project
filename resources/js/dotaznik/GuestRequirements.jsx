@@ -15,8 +15,15 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
             <Field className="flex items-center justify-between py-3">
 
                 <span className="flex grow flex-col">
-                    <Label as="span" passive className="text-sm/6 font-medium text-gray-700 notoserifdisplay font-thin">
-                        <span className="ppplayground text-3xl text-gray-900">{name}</span> má špeciálne stravovacie požiadavky
+                    <Label as="span" passive className=" font-medium text-gray-700 notoserifdisplay font-thin">
+                        {
+                            name !== null ? (
+                                <span><span className="ppplayground text-3xl text-gray-900">{name}</span> má </span>
+                            ) : (
+                            "Mám "
+                            )
+                        }
+                        špeciálne stravovacie požiadavky
                     </Label>
                 </span>
                 <Switch
@@ -42,9 +49,9 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                         requirement={restriction}
                                         checked={guestRestrictions.indexOf(restriction.id) >= 0}
                                         setChecked={(checked) => {
-                                            if(checked){
+                                            if (checked) {
                                                 setGuestRestrictions([...guestRestrictions, restriction.id])
-                                            }else{
+                                            } else {
                                                 setGuestRestrictions(guestRestrictions.filter((r) => r !== restriction.id))
                                             }
                                         }}
@@ -62,9 +69,9 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                                     requirement={restriction}
                                                     checked={guestRestrictions.indexOf(restriction.id) >= 0}
                                                     setChecked={(checked) => {
-                                                        if(checked){
+                                                        if (checked) {
                                                             setGuestRestrictions([...guestRestrictions, restriction.id])
-                                                        }else{
+                                                        } else {
                                                             setGuestRestrictions(guestRestrictions.filter((r) => r !== restriction.id))
                                                         }
                                                     }}

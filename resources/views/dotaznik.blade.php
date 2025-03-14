@@ -33,7 +33,7 @@
 
         <div class="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
             <div class="sm:mx-auto sm:w-full sm:max-w-md">
-                <div class="h-24 w-auto">
+                <div class="h-16 w-auto">
                     <svg width="100%" height="100%" viewBox="0 0 970 1241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
                             <g transform="matrix(1,0,0,1,-45783.9,-555.673)">
                                 <g transform="matrix(5.55556,0,0,5.55556,45491.9,0)">
@@ -48,27 +48,25 @@
                         </svg>
                 </div>
                 <h1 class="mt-6 text-center text-xl/9 font-bold tracking-tight text-gray-900 notoserifdisplay font-thin">
-                    Svadobny dotaznik
+                    Bude svadba, ale už teraz je tu dotaznik!
                 </h1>
             </div>
 
             <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[640px]">
-            <h2 class="text-gray-900">
-                {{ $invitation->label }}
-            </h2>
+{{--                <h2 class="text-gray-900">--}}
+{{--                    {{ $invitation->label }}--}}
+{{--                </h2>--}}
+{{--    --}}
+{{--                <ul>--}}
+{{--                    <li class="text-gray-900">{{ $invitation->mainGuest->name }}</li>--}}
+{{--                    @foreach($invitation->mainGuest->children as $guest)--}}
+{{--                        <li class="text-gray-900">{{ $guest->name }}</li>--}}
+{{--                    @endforeach--}}
+{{--                </ul>--}}
 
-            <ul>
-                <li class="text-gray-900">{{ $invitation->mainGuest->name }}</li>
-                @foreach($invitation->mainGuest->children as $guest)
-                    <li class="text-gray-900">{{ $guest->name }}</li>
-                @endforeach
-            </ul>
-
-
-
-{{--                <div id="dotaznik-root" class="bg-white px-6 py-12 shadow-sm sm:px-12">--}}
-{{--                    <noscript>You need to enable JavaScript to run this app.</noscript>--}}
-{{--                </div>--}}
+                <div id="dotaznik-root" class="bg-white px-6 py-12 shadow-sm sm:px-12">
+                    <noscript>You need to enable JavaScript to run this app.</noscript>
+                </div>
             </div>
         </div>
 

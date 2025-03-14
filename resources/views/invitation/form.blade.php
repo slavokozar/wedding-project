@@ -19,12 +19,12 @@
 
     {!! RecaptchaV3::initJs() !!}
 </head>
-<body class="h-full bg-white">
+<body class="h-full" style="background: #5a272c">
 
 
 {{--    <div class="relative isolate px-6 pt-14 lg:px-8">--}}
     <div class="block md:flex min-h-full flex-1">
-        <div class="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24">
+        <div class="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-24 bg-white">
             <div class="mx-auto w-full max-w-sm lg:w-96">
                 <div>
                     <div class="h-48 w-auto">
@@ -50,7 +50,7 @@
                     Tešíme sa na Vás.
                     </p>
 
-                    <p class="mt-2 text-sm text-gray-500 notoserifdisplay font-thin">
+                    <p class="mt-2 text-gray-500 notoserifdisplay font-thin">
                     Vyplňte nám prosím krátky dotazník, aby sme pre Vás mohli všetko dokonale naplánovať.
                     </p>
                 </div>
@@ -100,13 +100,13 @@
                 </div>
             </div>
         </div>
-        <div class="relative hidden w-0 flex-1 lg:block sm:hidden">
+        <div class="relative hidden w-0 flex-1 lg:flex sm:hidden flex flex-col">
 {{--            <img--}}
 {{--                alt=""--}}
 {{--                src="{{ asset('photo/kursalon.jpeg') }}"--}}
 {{--                class="absolute inset-0 size-full object-cover"--}}
 {{--            />--}}
-            <svg width="100%" height="100%" viewBox="0 0 4725 3475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+            <svg class="justify-center" width="60%" height="60%" viewBox="0 0 4725 3475" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;margin:auto;">
     <g transform="matrix(1,0,0,1,-32823.7,-26812.2)">
         <g id="Page-42" serif:id="Page 42" transform="matrix(23.8095,0,0,17.5114,32823.7,26812.2)">
             <rect x="0" y="0" width="198.425" height="198.425" style="fill:none;"/>

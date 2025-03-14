@@ -19,28 +19,14 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         Guest::reguard();
+//
+//        User::create([
+//            'name' => 'Slavo',
+//            'email' => 'slavo.kozar@gmail.com',
+//            'password' => bcrypt('secret'),
+//        ]);
 
-        User::create([
-            'name' => 'Slavo',
-            'email' => 'slavo.kozar@gmail.com',
-            'password' => bcrypt('secret'),
-        ]);
 
-
-        $json = File::get("guests.json");
-        $guests = json_decode($json);
-
-        $parentGuest = null;
-
-        foreach ($guests as $guestData) {
-            $guest = Guest::create((array) $guestData);
-            if (intval($guestData->main) > 0) {
-                $parentGuest = $guest;
-            } else {
-                $guest->parent_id = $parentGuest->id;
-                $guest->save();
-            }
-        }
 
         for($i = 1; $i <= 10; $i++){
             Table::create([
@@ -62,8 +48,9 @@ class DatabaseSeeder extends Seeder
             "Alergia na sóju",
             "Alergia na orechy",
             "Alergia na huby",
-            "Pescatarian",
-            "Frutarian",
+            "Pescatariánstvo",
+            "Frutariánstvo",
+            "Iné...",
         ];
 
         NutritionalRequirements::create([
@@ -72,7 +59,7 @@ class DatabaseSeeder extends Seeder
         ]);
 
         NutritionalRequirements::create([
-            'name' => "Vegan",
+            'name' => "Vegánstvo",
             'main' => true
         ]);
 

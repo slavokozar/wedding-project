@@ -24,10 +24,6 @@ class InvitationController extends Controller
 
     public function form(Request $request)
     {
-//        return $request->userAgent();
-//        return $request->userAgent();
-
-
         $request->session()->forget('invitation');
 
         return view('invitation.form');
@@ -35,8 +31,6 @@ class InvitationController extends Controller
 
     public function submit(Request $request)
     {
-//        dd($request->all());
-
         $validator = Validator::make($request->all(), [
             'g-recaptcha-response' => 'required|recaptchav3:invitation,0.5',
             'code' => 'required|exists:invitations'
@@ -53,8 +47,6 @@ class InvitationController extends Controller
         $request->session()->put('invitation', $request->get('code'));
 
         return redirect(route('invitation-questionaire', [$request->get('code')]));
-
-//        return $validated = $validator->validated();
     }
 
     public function show(Request $request, string $code)
@@ -68,11 +60,10 @@ class InvitationController extends Controller
 
         $invitation = Invitation::where('code', $code)->firstOrFail();
 
-//        $invitation->accesses()->create([
-//            'ip_address' => $request->getClientIp(),
-//            'browser' => $request->userAgent(),
-//            'device'
-//        ])
+        $invitation->accesses()->create([
+            'ip_address' => $request->getClientIp(),
+            'agent' => $request->userAgent()
+        ]);
 
         return view('dotaznik', ['invitation' => $invitation]);
     }
