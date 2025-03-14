@@ -29,12 +29,11 @@ function Questionaire(Props) {
 
         const indexOfLastSlash = href.lastIndexOf('/');
         const indexOfQuestionMark = href.indexOf('?');
-
-        const code = href.substring(indexOfLastSlash + 1, indexOfQuestionMark);
-
-        console.log({code});
-
-        return code;
+        if (indexOfQuestionMark > 0) {
+            return href.substring(indexOfLastSlash + 1, indexOfQuestionMark);
+        } else {
+            return href.substring(indexOfLastSlash + 1);
+        }
     }
 
     useEffect(() => {
@@ -94,7 +93,8 @@ function Questionaire(Props) {
                 updateInvitation();
             }}
         >
-            <span  className="notoserifdisplay text-gray-700 font-thin mb-5">Ahoj{invitation.main_guest.children.length > 0 ? "te" : ""},</span>
+            <span
+                className="notoserifdisplay text-gray-700 font-thin mb-5">Ahoj{invitation.main_guest.children.length > 0 ? "te" : ""},</span>
             <h1 className="ppplayground text-6xl text-gray-900 mb-5">{invitation.label}</h1>
             <p className="mb-1 notoserifdisplay font-thin text-gray-700  mb-3">
                 Vyplň{invitation.main_guest.children.length > 0 ? "te" : ""} nám prosím odpovede na niekoľko rýchlych
@@ -172,11 +172,13 @@ function Questionaire(Props) {
                 Veľmi radi pre Vás sprostredkujeme ubytovanie v blízkosti konania hostiny.
             </p>
             <p className="text-gray-500 mb-1 notoserifdisplay font-thin">
-                Dajte nám prosím vedieť, či do miesta konania svadby <strong>dorazíte už večer pred svadbou</strong>, alebo až v deň
+                Dajte nám prosím vedieť, či do miesta konania svadby <strong>dorazíte už večer pred svadbou</strong>,
+                alebo až v deň
                 konania svadby.
             </p>
             <p className="text-gray-500 mb-1 notoserifdisplay font-thin">
-                Taktiež na deň po svadbe - <strong>sobotu 30. 8.</strong> máme v pláne menšiu <strong>afterparty</strong>.
+                Taktiež na deň po svadbe - <strong>sobotu 30. 8.</strong> máme v pláne
+                menšiu <strong>afterparty</strong>.
                 <br/>
                 V prípade, že by ste si s nami chceli užiť víkend naplno je možné ostať v Trenčianských Tepliciach
                 až do
