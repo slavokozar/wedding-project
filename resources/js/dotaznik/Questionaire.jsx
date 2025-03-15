@@ -53,7 +53,7 @@ function Questionaire(Props) {
 
             setInvitation(response.data)
 
-            setEmails(response.data.emails.split(','))
+            setEmails(response.data.emails !== null ? response.data.emails.split(',') : [])
 
             const nights = [false, true, false];
             response.data.nights.forEach(night => {
@@ -69,6 +69,10 @@ function Questionaire(Props) {
             }, {})
 
             guestRestrictions[response.data.main_guest.id] = response.data.main_guest.restrictions.map(r => r.id);
+            response.data.main_guest.children.forEach(guest => {
+                guestRestrictions[guest.id] = guest.restrictions.map(r => r.id);
+            })
+
             setGuestRestrictions(guestRestrictions)
         }
 
