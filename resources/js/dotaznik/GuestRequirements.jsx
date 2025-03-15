@@ -5,8 +5,15 @@ import axios from "axios";
 import {Description, Field, Label, Switch} from "@headlessui/react";
 
 function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestrictions}) {
-    const [enabled, setEnabled] = useState(false)
-    const [moreRequirements, setMoreRequirements] = useState(false)
+    const [enabled, setEnabled] = useState(guestRestrictions.length > 0)
+    const [moreRequirements, setMoreRequirements] = useState(guestRestrictions.reduce((a, c) => (a || c > 3), false));
+
+    useEffect(() => {
+        setEnabled(guestRestrictions.length > 0);
+        console.log(guestRestrictions.reduce((a, c) => (a || c > 3), false))
+
+        // setMoreRequirements(guestRestrictions.reduce((a, c) => c || a > 3, false));
+    }, [guestRestrictions])
 
     if (restrictions == null) return null;
 
@@ -20,7 +27,7 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                             name !== null ? (
                                 <span><span className="ppplayground text-3xl text-gray-900">{name}</span> má </span>
                             ) : (
-                            "Mám "
+                                "Mám "
                             )
                         }
                         špeciálne stravovacie požiadavky
@@ -79,10 +86,13 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                             ))
                                     }
                                     <button
-                                        className="border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none text-gray-700 select-none notoserifdisplay font-thin"
+                                        className="border border-transparent -ml-2 mb-2 px-2 py-1 text-sm transition-all disabled:pointer-events-none select-none notoserifdisplay font-thin focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 bg-gray-600 text-white shadow-sm hover:bg-gray-500"
                                         type="button"
                                         onClick={(e) => {
-                                            setMoreRequirements(false);
+                                            if(!guestRestrictions.reduce((a, c) => (a || c > 3), false)) {
+                                                setMoreRequirements(false);
+                                            }
+
                                         }}
                                     >
                                         Menej...
@@ -90,7 +100,7 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                 </>
                             ) : (
                                 <button
-                                    className="border border-transparent py-1 text-sm transition-all text-slate-600 disabled:pointer-events-none text-gray-700 select-none notoserifdisplay font-thin"
+                                    className="border border-transparent -ml-2 mb-2 px-2 py-1 text-sm transition-all disabled:pointer-events-none select-none notoserifdisplay font-thin focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 bg-gray-600 text-white shadow-sm hover:bg-gray-500"
                                     type="button"
                                     onClick={(e) => {
                                         setMoreRequirements(true);

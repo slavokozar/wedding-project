@@ -53,21 +53,32 @@ function Questionaire(Props) {
 
             setInvitation(response.data)
 
-            const guestIds = [response.data.main_guest.id, ...response.data.main_guest.children.map(ch => ch.id)]
+            setEmails(response.data.emails.split(','))
 
-            setGuestRestrictions(
-                guestIds.reduce((a, c) => {
-                    a[c] = [];
-                    return a;
-                }, {})
-            )
+            const nights = [false, true, false];
+            response.data.nights.forEach(night => {
+                nights[night.night - 1] = true;
+            })
+            setNights(nights);
+
+
+            const guestIds = [response.data.main_guest.id, ...response.data.main_guest.children.map(ch => ch.id)]
+            const guestRestrictions = guestIds.reduce((a, c) => {
+                a[c] = [];
+                return a;
+            }, {})
+
+            guestRestrictions[response.data.main_guest.id] = response.data.main_guest.restrictions.map(r => r.id);
+            setGuestRestrictions(guestRestrictions)
         }
 
         loadInvitation();
     }, []);
 
 
-    if (restrictions == null || invitation == null) return null;
+    if (restrictions == null || invitation == null) return (
+        <div className="loader"></div>
+    );
 
     async function updateInvitation() {
         console.log({
@@ -79,11 +90,14 @@ function Questionaire(Props) {
         const response = await axios.put("/api/invitation", {
             code: getCode(),
             emails: emails.join(','),
+            guestRestrictions,
             nights: nights.map((night, index) => index + 1).filter((night, index) => nights[index])
         });
 
         console.log(response);
     }
+
+    console.log({guestRestrictions});
 
     return (
         <form
@@ -129,11 +143,6 @@ function Questionaire(Props) {
                                     restrictions={restrictions}
                                     guestRestrictions={guestRestrictions[invitation.main_guest.id]}
                                     setGuestRestrictions={(restrictions) => {
-                                        console.log("setGuestRestrictions", invitation.main_guest.id, restrictions)
-
-                                        console.log(Object.keys(guestRestrictions));
-                                        // .map((gr) => (gr === invitation.main_guest.id ? restrictions : guestRestrictions[gr])))
-
                                         const newGuestRestrictions = {};
                                         newGuestRestrictions[invitation.main_guest.id] = restrictions;
 
@@ -153,10 +162,16 @@ function Questionaire(Props) {
                                 <GuestRequirements
                                     name={guest.firstName}
                                     restrictions={restrictions}
-                                    // guestRestrictions={guestRestrictions[guest.id]}
-                                    // setGuestRestrictions((restrictions) => {
-                                    //     console.log(setGuestRestrictions, guest.id, restrictions)
-                                    // })
+                                    guestRestrictions={guestRestrictions[guest.id]}
+                                    setGuestRestrictions={(restrictions) => {
+                                        const newGuestRestrictions = {};
+
+                                        newGuestRestrictions[guest.id] = restrictions;
+
+                                        setGuestRestrictions(
+                                            Object.assign({}, guestRestrictions, newGuestRestrictions)
+                                        )
+                                    }}
                                 />
                             ))
                         ) : null

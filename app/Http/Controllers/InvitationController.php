@@ -17,9 +17,10 @@ class InvitationController extends Controller
 {
     public function generate()
     {
-        $i = Invitation::first();
+        $i = Invitation::get();
+        return $i;
 
-        return URL::signedRoute('invitation-questionaire', ['invitation' => $i->code]);
+//        return URL::signedRoute('invitation-questionaire', ['invitation' => $i->code]);
     }
 
     public function form(Request $request)

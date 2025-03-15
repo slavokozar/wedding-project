@@ -52,7 +52,13 @@ Route::put('/api/invitation', function (Request $request) {
     $i->update(['emails' => $request->input('emails', "")]);
 
     // RESTRICTIONS
+    $guestRestrictions = $request->input('guestRestrictions');
 
+    $i->mainGuest->restrictions()->sync($guestRestrictions[$i->mainGuest->id]);
+
+    foreach($i->mainGuest->children as $guest){
+        $guest->restrictions()->sync($guestRestrictions[$guest->id]);
+    }
 
     // NIGHTS
 
