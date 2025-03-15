@@ -12,7 +12,7 @@ function Questionaire(Props) {
     const [guestRestrictions, setGuestRestrictions] = useState(null);
     const [nights, setNights] = useState([false, true, false]);
 
-    const [success, setSuccess] = useState(true);
+    const [success, setSuccess] = useState(false);
     /*
      - email
      - stravovace obmedzenia
