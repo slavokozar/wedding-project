@@ -53,6 +53,7 @@ Route::put('/api/invitation', function (Request $request) {
 
     // RESTRICTIONS
     $guestRestrictions = $request->input('guestRestrictions');
+    dd($guestRestrictions);
 
     $i->mainGuest->restrictions()->sync($guestRestrictions[$i->mainGuest->id]);
 
