@@ -22,7 +22,7 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
             <Field className="flex items-center justify-between py-3">
 
                 <span className="flex grow flex-col">
-                    <Label as="span" passive className=" font-medium text-gray-700 notoserifdisplay font-thin">
+                    <Label as="span" passive className=" font-medium text-gray-700 notoserifdisplay ">
                         {
                             name !== null ? (
                                 <span><span className="ppplayground text-3xl text-gray-900">{name}</span> má </span>
@@ -86,7 +86,7 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                             ))
                                     }
                                     <button
-                                        className="border border-transparent -ml-2 mb-2 px-2 py-1 text-sm transition-all disabled:pointer-events-none select-none notoserifdisplay font-thin focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 bg-gray-600 text-white shadow-sm hover:bg-gray-500"
+                                        className="border border-transparent -ml-2 mb-2 px-2 py-1 text-sm transition-all disabled:pointer-events-none select-none notoserifdisplay  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 bg-gray-600 text-white shadow-sm hover:bg-gray-500"
                                         type="button"
                                         onClick={(e) => {
                                             if(!guestRestrictions.reduce((a, c) => (a || c > 3), false)) {
@@ -100,7 +100,7 @@ function GuestRequirements({name, restrictions, guestRestrictions, setGuestRestr
                                 </>
                             ) : (
                                 <button
-                                    className="border border-transparent -ml-2 mb-2 px-2 py-1 text-sm transition-all disabled:pointer-events-none select-none notoserifdisplay font-thin focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 bg-gray-600 text-white shadow-sm hover:bg-gray-500"
+                                    className="border border-transparent -ml-2 mb-2 px-2 py-1 text-sm transition-all disabled:pointer-events-none select-none notoserifdisplay  focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 bg-gray-600 text-white shadow-sm hover:bg-gray-500"
                                     type="button"
                                     onClick={(e) => {
                                         setMoreRequirements(true);
@@ -179,7 +179,7 @@ function RequirementCheck({requirement, checked, setChecked}) {
         <div key={requirement.id} className="relative flex gap-3 py-1">
             <div className="min-w-0 flex-1 text-sm/6">
                 <label htmlFor={`person-${requirement.id}`}
-                       className="text-gray-700 select-none notoserifdisplay font-thin">
+                       className="text-gray-700 select-none notoserifdisplay ">
                     {requirement.name}
                 </label>
             </div>

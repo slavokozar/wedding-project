@@ -36,6 +36,12 @@
 
 @font-face {
     font-family: NotoSerifDisplay;
+    font-weight: 200;
+    src: url("/public/fonts/NotoSerifDisplay/NotoSerifDisplay-Light.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: NotoSerifDisplay;
     font-weight: 400;
     src: url("/public/fonts/NotoSerifDisplay/NotoSerifDisplay-Regular.ttf") format('truetype');
 }
