@@ -340,13 +340,65 @@ function Questionaire(Props) {
                         </div>
                         <div className="relative flex gap-3 pt-3.5 pb-4">
                             <div className="min-w-0 flex-1">
-                                <label htmlFor="offers" className="font-medium text-gray-900 notoserifdisplay">
-                                    Ubytovanie zo soboty 30. na nedeľu 31. Augusta
+                                <label htmlFor="comments" className="font-medium text-gray-900 notoserifdisplay">
+                                    Ubytovanie zo štvrtka 28. na piatok 29. Augusta
+                                    <br/>
+                                    ( noc pred svadbou )
                                 </label>
-                                <p id="offers-description" className="text-gray-500 notoserifdisplay ">
-                                    Zaškrtnite v prípade, že máte zájem predĺžiť si pobyt v
-                                    Trenčianskych Tepliciach až do nedele.
+                                <p id="comments-description" className="text-gray-500 notoserifdisplay ">
+                                    Zaškrtnite prosím v prípade, že máte zájem do Trenčianskych Teplíc
+                                    doraziť večer pred svadbou.
                                 </p>
+                            </div>
+                            <div className="flex h-6 shrink-0 items-center">
+                                <div className="group grid size-4 grid-cols-1">
+                                    <input
+                                        defaultChecked
+                                        id="comments"
+                                        name="comments"
+                                        type="checkbox"
+                                        aria-describedby="comments-description"
+                                        className="col-start-1 row-start-1 appearance-none border border-gray-300 bg-white checked:border-gray-600 checked:bg-gray-600 indeterminate:border-gray-600 indeterminate:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
+                                        checked={nights[0]}
+                                        onChange={(e) => {
+                                            setNights(
+                                                nights.map((a, i) => (
+                                                    i === 0 ? e.target.checked : a
+                                                ))
+                                            )
+                                        }}
+                                    />
+                                    <svg
+                                        fill="none"
+                                        viewBox="0 0 14 14"
+                                        className="pointer-events-none col-start-1 row-start-1 size-3.5 self-center justify-self-center stroke-white group-has-disabled:stroke-gray-950/25"
+                                    >
+                                        <path
+                                            d="M3 8L6 11L11 3.5"
+                                            strokeWidth={2}
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            className="opacity-0 group-has-checked:opacity-100"
+                                        />
+                                        <path
+                                            d="M3 7H11"
+                                            strokeWidth={2}
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            className="opacity-0 group-has-indeterminate:opacity-100"
+                                        />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="relative flex gap-3 pt-3.5 pb-4">
+                            <div className="min-w-0 flex-1">
+                                <label htmlFor="offers" className="font-medium text-gray-900 notoserifdisplay">
+                                    Ubytovanie počas "svadobnej noci" - z piatka 29. 8. na 30. 8.
+                                </label>
+                                {/*<p id="offers-description" className="text-gray-500 notoserifdisplay ">*/}
+                                {/*    Ubytovanie*/}
+                                {/*</p>*/}
                             </div>
                             <div className="flex h-6 shrink-0 items-center">
                                 <div className="group grid size-4 grid-cols-1">
@@ -356,11 +408,11 @@ function Questionaire(Props) {
                                         type="checkbox"
                                         aria-describedby="offers-description"
                                         className="col-start-1 row-start-1 appearance-none border border-gray-300 bg-white checked:border-gray-600 checked:bg-gray-600 indeterminate:border-gray-600 indeterminate:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600 disabled:border-gray-300 disabled:bg-gray-100 disabled:checked:bg-gray-100 forced-colors:appearance-auto"
-                                        checked={nights[2]}
+                                        checked={nights[1]}
                                         onChange={(e) => {
                                             setNights(
                                                 nights.map((a, i) => (
-                                                    i === 2 ? e.target.checked : a
+                                                    i === 1 ? e.target.checked : a
                                                 ))
                                             )
                                         }}
