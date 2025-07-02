@@ -14,6 +14,18 @@ Route::get('/', function () {
     return view('homepage');
 })->name('dashboard');
 
+Route::get('/organizacia', function () {
+    return view('organizacia');
+});
+
+Route::get('/ubytovanie', function () {
+    return view('ubytovanie');
+});
+
+Route::get('/kostol', function () {
+    return view('kostol');
+})->name('kostol');
+
 Route::prefix('manag')->middleware('auth')->group(function () {
     // Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     // Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
