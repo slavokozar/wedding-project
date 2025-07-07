@@ -895,11 +895,10 @@
             </div>
         </div>
 
-        <div class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
+        <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
+            <h2 class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Organizácia svadobného dňa</h2>
 
             <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
-
-
                 <div class="relative">
                     <div class="md:flex items-center md:space-x-4 mb-3">
                         <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
@@ -1141,7 +1140,89 @@
 
             </div>
             <!-- End: Vertical Timeline #3 -->
-        </div>
+        </section>
+
+        <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
+        <h2 class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Dôležité otázky a odpovede</h2>
+
+            <dl class="mt-20 divide-y divide-gray-900/10">
+                <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+                    <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-4">
+                        <svg class="inline-block max-w-24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Capa_1" viewBox="0 0 95.844 95.844" xml:space="preserve">
+                            <polygon points="47.918,39.699 52.742,12.66 48.872,7.32 50.771,3.511 45.066,3.511 46.969,7.32 43.093,12.66   "/>
+                            <path d="M75.541,86.669h7.621l-1.902-32.388L77.443,11.43L59.35,3.812l-1.905-3.809l-1.903,7.618l-7.623,43.807L40.301,7.618    L38.393,0L36.49,3.809l-18.094,7.617l-3.811,42.855l-1.902,32.388h7.619l6.952-42.032l2.568,9.639l-7.621,32.045l21.905,9.523    l3.809-18.743l3.807,18.743l21.909-9.523l-7.625-32.045l2.57-9.639L75.541,86.669z M67.999,27.259l-7.741,1.073l5.119-6.312    l2.622,2.026V27.259z"/>
+                        </svg>
+                        <h3 class="inline-block text-xl notoserifdisplay font-thin">Dress Code</h3>
+                    </dt>
+                    <dd class="mt-4 lg:col-span-8 lg:mt-0">
+                        <p class="text-base/7 text-gray-600 mb-4">Náš veľký deň si predstavujeme v elegantnom štýle, preto Vás, milí hostia, prosíme o formálne oblečenie:</p>
+                        <ul class="max-w-md space-y-1 list-disc list-inside mb-4">
+                            <li>pre <span class="font-bold">dámy</span> to znamená <span class="font-bold">šaty</span>, overaly či kostýmy v&nbsp;<span class="font-bold">elegantnom štýle</span></li>
+                            <li>pre <span class="font-bold">pánov oblek</span> s kravatou alebo motýlikom</li>
+                        </ul>
+
+                        <p class="text-base/7 text-gray-600">p. s. dámy, prosím, <span class="font-bold">vyhnite sa bielej farbe</span></p>
+                    </dd>
+                </div>
+
+                <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+                    <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-4">
+                        <svg class="inline-block max-w-24"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Capa_1" viewBox="0 0 377.798 377.798" xml:space="preserve">
+                            <path d="M330.348,115.073h-34.232c11.486-8.011,17.037-17.842,15.624-27.707c-2.234-15.588-21.836-26.061-48.778-26.061  c-5.124,0-10.389,0.382-15.649,1.136c-3.462,0.496-6.763,1.251-9.902,2.191c0.494-2.741,0.776-5.544,0.776-8.391  c0-32.062-21.49-56.24-49.987-56.24s-49.987,24.178-49.987,56.24c0,2.701,0.262,5.364,0.719,7.975  c-2.699-0.747-5.513-1.355-8.445-1.775c-5.26-0.753-10.525-1.136-15.649-1.136c-26.942,0-46.544,10.473-48.778,26.061  c-1.414,9.864,4.137,19.696,15.624,27.707H47.45c-9.649,0-17.5,7.851-17.5,17.5v79.458v71.997v76.27c0,9.649,7.851,17.5,17.5,17.5  h282.898c9.649,0,17.5-7.851,17.5-17.5v-76.27v-71.997v-79.458C347.848,122.923,339.998,115.073,330.348,115.073z M249.44,77.29  c4.558-0.653,9.107-0.984,13.521-0.984c20.055,0,33,6.706,33.93,13.189c0.556,3.88-2.993,8.88-9.494,13.377  c-8.1,5.602-19.989,9.853-32.62,11.663c-2.494,0.357-5.075,0.539-7.672,0.539c-13.653,0-25.814-4.86-33.209-9.145  c1.552-1.585,2.955-3.106,4.139-4.462c3.628-4.156,8.438-10.342,12.45-17.789C236.085,80.683,242.478,78.287,249.44,77.29z   M167.9,130.073h41.997v81.958H167.9V130.073z M188.198,15c20.273,0,34.987,17.344,34.987,41.24  c0,23.903-27.576,47.98-34.893,51.042c-7.378-3.311-35.082-27.857-35.082-51.042C153.211,32.344,167.925,15,188.198,15z   M123.021,114.534c-12.631-1.81-24.521-6.061-32.62-11.663c-6.5-4.497-10.05-9.497-9.494-13.377  c0.929-6.483,13.875-13.189,33.93-13.189c4.415,0,8.964,0.331,13.521,0.984c6.249,0.896,12.032,2.924,17.201,5.492  c4.161,7.844,9.282,14.372,13.105,18.71c1.289,1.463,2.828,3.116,4.535,4.836c-7.449,4.182-19.277,8.744-32.506,8.744  C128.095,115.073,125.513,114.892,123.021,114.534z M44.95,132.573c0-1.355,1.145-2.5,2.5-2.5h83.242h0.004H152.9v81.958H44.95  V132.573z M152.9,362.798H47.45c-1.355,0-2.5-1.145-2.5-2.5v-76.27H152.9V362.798z M209.897,361.798H167.9v-77.77h41.997V361.798z   M332.848,360.298c0,1.355-1.145,2.5-2.5,2.5H224.897v-78.77h107.951V360.298z M332.848,269.028H44.95v-41.997h287.898V269.028z   M332.848,212.031H224.897v-81.958h105.451c1.355,0,2.5,1.145,2.5,2.5V212.031z"/>
+                        </svg>
+                        <h3 class="inline-block text-xl notoserifdisplay font-thin">Dary</h3>
+                    </dt>
+                    <dd class="mt-4 lg:col-span-8 lg:mt-0">
+                        <p class="text-base/7 text-gray-600">
+                            Už nejaký čas žijeme v <span class="font-bold">spoločnej domácnosti</span>, v ktorej nám <span class="font-bold">nechýba</span> žiadne praktické <span class="font-bold">vybavenie</span>..</p>
+                        <p class="text-base/7 text-gray-600 mb-4">Hneď po svadbe odchádzame na <span class="font-bold">svadobnú cestu</span> na Srí Lanku, a preto nás najviac <span class="font-bold">poteší príspevok</span> na naše dobrodružstvá na ostrove čaju.</p>
+
+                        <p class="text-base/7 text-gray-600">Ak by ste však trvali na fyzickom dare, ktorý nám bude pripomínať tento výnimočný deň, budeme vďační za darčekovú poukážku z niektorého z nasledujúcich obchodov.</p>
+                        <p class="text-base/7 text-gray-600 mb-2"> Následne sa s Vami radi podelíme o radosť z toho, čo sme si za ňu vybrali.</p>
+                        <ul class="max-w-md space-y-2 list-disc list-inside">
+                            <li><a class="underline" target="_blank" href="https://www.martinus.sk/seria/darcekove-poukazky-martinus-sk">martinus.sk</a> - radi si knihu, alebo platňu od Vás odložíme v našej knižnici</li>
+                            <li><a class="underline" target="_blank" href="https://www.alza.cz/SK/gaming/alza-poukazy/18873911.htm">alza.cz</a> - praktický darček do domácnosti</li>
+                            <li><a class="underline" target="_blank" href="https://www.kofio.cz/darky/darkovy-poukaz/612">kofio.cz</a> - káva a príslušenstvo - šálky, filtre, mlynčeky...</li>
+                            <li><a class="underline" target="_blank" href="https://www.coffeesheep.sk/">CoffeeSheep</a> - náš najobľúbenejší zdroj kávy</li>
+                            <li><a class="underline" target="_blank" href="https://www.designville.cz/darkove-poukazy">DesignVille</a> - krásne kúsky domova</li>
+                        </ul>
+                    </dd>
+                </div>
+
+                <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+                    <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-4">
+                        <svg class="inline-block max-w-24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Layer_1" viewBox="0 0 511.999 511.999" xml:space="preserve">
+                            <path d="M416.686,81.938c4.539-7.795,7.134-16.825,7.134-26.386V25.024c0-9.839-5.546-18.523-14.474-22.664    c-8.93-4.141-19.141-2.765-26.65,3.591l-11.432,9.675l-11.43-9.674c-7.768-6.576-18.347-7.687-27.093-3.392    c-8.748-4.289-19.324-3.178-27.078,3.388l-11.445,9.678l-11.432-9.675c-7.759-6.569-18.335-7.681-27.084-3.391    c-8.747-4.296-19.325-3.185-27.091,3.39l-11.435,9.676l-11.439-9.675c-7.752-6.565-18.326-7.678-27.076-3.394    c-8.754-4.287-19.332-3.174-27.084,3.391l-11.445,9.678l-11.435-9.676c-7.509-6.353-17.716-7.731-26.639-3.592    c-8.928,4.14-14.473,12.825-14.473,22.665v30.528c0,9.563,2.594,18.593,7.131,26.389c-14.028,14.027-18.855,84.111-2.89,143.566    c9.831,36.613,26.236,69.059,48.76,96.436c24.455,29.727,56.159,53.428,94.404,70.645c-9.592,5.72-17.841,12.738-24.634,20.994    c-2.975,3.616-2.455,8.957,1.161,11.932c3.615,2.974,8.956,2.455,11.932-1.161c7.282-8.852,16.717-16.008,28.086-21.364    c4.029,9.004,10.828,25.809,15.396,45.708c0.901,3.925,4.392,6.583,8.254,6.581c0.628,0,1.267-0.07,1.906-0.217    c4.563-1.048,7.412-5.596,6.364-10.159c-3.026-13.175-6.907-24.971-10.462-34.363c14.866,10.429,24.937,24.942,30.015,43.38    c3.754,13.626,3.737,26.033,3.346,32.548c-5.82,2.025-11.726,3.685-17.687,4.992c0.083-3.885,0.023-7.85-0.188-11.869    c-0.246-4.676-4.275-8.269-8.909-8.022c-4.676,0.244-8.267,4.233-8.024,8.909c0.246,4.701,0.247,9.289,0.047,13.74    c-22.326,2.32-45.015-0.262-66.532-7.749c-0.454-7.622-0.394-23.28,5.589-39.559c1.615-4.394-0.637-9.266-5.033-10.881    c-4.393-1.614-9.265,0.637-10.881,5.032c-5.184,14.107-6.544,27.613-6.771,36.46c-0.104,4.025-0.009,7.955,0.283,11.679    c0.385,4.912,0.626,6.362,1.935,8.238c0.965,1.385,2.325,2.449,3.899,3.057c19.872,7.669,40.744,11.503,61.623,11.503    c20.876-0.001,41.757-3.835,61.624-11.503c2.82-1.088,4.848-3.596,5.32-6.581c0.131-0.827,3.139-20.531-3.115-43.82    c-4.889-18.212-16.38-41.538-43.116-57.501C378.87,346.54,414.022,263.382,425.232,200.043c0.817-4.61-2.259-9.008-6.869-9.824    c-4.61-0.814-9.008,2.26-9.824,6.87c-10.88,61.461-45.875,142.879-150.314,184.819c-37.028-44.611-47.21-96.53-49.14-132.766    c-0.25-4.676-4.276-8.269-8.915-8.015c-4.676,0.249-8.264,4.241-8.015,8.915c1.763,33.116,10.023,78.507,37.215,121.026    c-30.13-15.408-55.444-35.363-75.458-59.607c-20.976-25.409-36.302-55.607-45.556-89.756    c-8.202-30.273-10.136-58.408-10.076-78.622c8.972,9.123,21.835,17.357,38.232,24.291c17.225,7.284,37.472,12.786,59.487,16.331    c-1.407,7.894-3.209,20.499-3.939,36.294c-0.216,4.677,3.4,8.643,8.077,8.859c0.133,0.007,0.266,0.009,0.399,0.009    c4.501,0,8.252-3.542,8.461-8.086c0.709-15.341,2.516-27.55,3.827-34.789c13.842,1.541,28.218,2.35,42.876,2.35    c44.884,0,87.211-7.447,119.186-20.968c16.417-6.942,29.293-15.188,38.266-24.325c0.031,8.277-0.273,17.867-1.213,28.379    c-0.416,4.663,3.027,8.781,7.689,9.198c0.258,0.023,0.512,0.034,0.765,0.034c4.34,0,8.039-3.316,8.433-7.723    C431.914,138.399,430.331,99.756,416.686,81.938z M348.878,18.892l16.91,14.309c3.161,2.675,7.791,2.675,10.951,0l16.909-14.309    c3.63-3.073,7.473-1.658,8.565-1.152c1.092,0.506,4.653,2.528,4.653,7.283v30.528c0,14.517-8.791,27.246-21.567,32.735V67.973    c0-7.325-3-13.982-8.447-18.746c-8.602-7.521-20.792-8.267-30.08-2.221V25.024c0-2.732-0.418-5.37-1.224-7.852    C346.677,17.445,347.811,17.988,348.878,18.892z M271.833,18.892l16.905,14.309c3.16,2.674,7.79,2.675,10.95,0.002l16.925-14.312    c3.624-3.068,8.01-2.073,10.551,0.149c1.211,1.059,2.654,2.956,2.654,5.984v30.528c0,0.179-0.014,0.356-0.016,0.535l-8.489-7.185    c-7.759-6.57-18.336-7.681-27.084-3.392c-7.81-3.835-17.07-3.339-24.494,1.489V25.024c0-2.731-0.418-5.366-1.222-7.846    C269.642,17.45,270.77,17.993,271.833,18.892z M194.785,18.895l16.918,14.308c3.16,2.673,7.792,2.672,10.95-0.001l16.911-14.31    c3.629-3.071,8.01-2.079,10.563,0.158c1.209,1.056,2.654,2.949,2.654,5.974v30.528c0,0.181-0.014,0.359-0.016,0.539l-8.501-7.19    c-7.767-6.575-18.352-7.682-27.104-3.381c-0.141-0.068-0.275-0.146-0.417-0.211c-7.94-3.683-16.889-2.99-24.056,1.677V25.024    c0-2.727-0.417-5.363-1.223-7.845C192.593,17.451,193.722,17.994,194.785,18.895z M109.188,17.74    c1.091-0.505,4.927-1.916,8.555,1.154l16.909,14.309c3.161,2.674,7.791,2.675,10.95,0.002l16.925-14.312    c3.624-3.069,8.016-2.075,10.538,0.125c1.216,1.068,2.665,2.977,2.665,6.007v30.528c0,0.18-0.014,0.358-0.016,0.538l-8.494-7.187    c-7.51-6.355-17.721-7.732-26.648-3.592c-8.924,4.14-14.471,12.824-14.471,22.663v20.32c-12.775-5.485-21.565-18.215-21.565-32.74    c0,0,0-30.53,0-30.53C104.537,20.267,108.097,18.245,109.188,17.74z M170.179,160.927c-9.679-2.606-18.768-5.66-27.062-9.167    c-27.216-11.509-42.825-26.526-42.825-41.199c0-5.096,1.843-10.204,5.479-15.254c5.934,5.146,13.049,8.989,20.921,11.065    c3.391,22.487,21.085,40.342,43.486,43.992V160.927z M143.056,98.503v-30.53c0-4.756,3.559-6.777,4.65-7.282    c0.565-0.262,1.865-0.766,3.494-0.766c1.518,0,3.318,0.439,5.069,1.92l16.912,14.31c3.161,2.674,7.791,2.675,10.952,0    l16.913-14.31c3.63-3.071,7.471-1.66,8.562-1.154c1.091,0.506,4.65,2.526,4.65,7.282v30.53c0,19.63-15.97,35.601-35.601,35.601    C159.027,134.103,143.056,118.133,143.056,98.503z M247.227,171.293c-13.683-0.298-27.024-1.327-39.793-3.025    c-0.098-0.016-0.196-0.028-0.294-0.041c-6.847-0.917-13.535-2.016-20.006-3.317v-14.546c11.785-1.92,22.264-7.772,30.045-16.163    c7.921,8.539,18.49,14.246,30.048,16.139V171.293z M226.881,119.369c2.78-6.401,4.331-13.454,4.331-20.867v-30.53    c0-2.733-0.442-5.371-1.251-7.853c1.139,0.27,2.279,0.816,3.352,1.725l16.92,14.309c3.158,2.673,7.79,2.671,10.948-0.002    l16.911-14.31c3.629-3.071,8.01-2.079,10.563,0.158c1.209,1.056,2.654,2.949,2.654,5.974v30.528c0,6.073-1.55,12.052-4.49,17.305    c-6.285,11.287-18.206,18.298-31.112,18.298C244.222,134.104,233.529,128.543,226.881,119.369z M324.266,164.911    c-18.623,3.74-38.956,5.92-60.084,6.381V150.34c11.558-1.893,22.126-7.598,30.043-16.131c7.92,8.535,18.486,14.238,30.041,16.131    V164.911z M303.918,119.369c2.837-6.549,4.344-13.664,4.344-20.868V67.973c0-2.731-0.418-5.366-1.222-7.846    c1.128,0.272,2.257,0.815,3.32,1.715l16.909,14.309c3.16,2.674,7.79,2.675,10.95,0.001l16.924-14.312    c3.624-3.069,8.011-2.073,10.552,0.149c1.211,1.059,2.654,2.956,2.654,5.984V98.5c0,6.073-1.55,12.052-4.49,17.305    c-6.286,11.288-18.208,18.299-31.115,18.299C321.258,134.104,310.565,128.543,303.918,119.369z M368.284,151.76    c-8.295,3.507-17.384,6.561-27.065,9.169V150.34c15.679-2.569,29.567-12.135,37.44-26.269c3.062-5.471,5.083-11.484,6.023-17.694    c7.881-2.076,15.003-5.922,20.942-11.072c3.638,5.053,5.486,10.163,5.486,15.256C411.11,125.234,395.5,140.251,368.284,151.76z"/>
+                        </svg>
+                        <h3 class="inline-block text-xl notoserifdisplay font-thin">Kvetiny</h3>
+                    </dt>
+                    <dd class="mt-4 lg:col-span-8 lg:mt-0">
+                        <p class="text-base/7 text-gray-600 mb-2">Kvety, ktorými nás obdarujete na svadbe, si <span class="font-bold">neužijeme</span>, keďže pár dní <span class="font-bold">po svadbe odchádzame</span> na svadobnú cestu.</p>
+
+                        <p class="text-base/7 text-gray-600 mb-4">Budeme sa však veľmi tešiť, ak nám <span class="font-bold">radosť z kvetov doprajete neskôr</span> – po návrate zo svadobnej cesty. <span class="font-bold">Vďaka darovanej poukážke</span> si kyticu radi vyzdvihneme v priebehu roka a znova si tak <span class="font-bold">pripomenieme výnimočnú atmosféru</span> nášho svadobného dňa.</p>
+
+                        <p class="text-base/7 text-gray-600 mb-2">Tipy na miesta, kde objednať:</p>
+
+                        <ul class="max-w-md space-y-2 list-disc list-inside">
+                            <li><a class="underline" target="_blank" href="https://www.kytkyodpotoka.cz/produkt/darkovy-poukaz/">Kytky od potoka</a></li>
+                            <li><a class="underline" target="_blank" href="https://www.green-decor.cz/product/darkovy-poukaz/">green decor</a> - paltba iba prevodom z českého účtu</li>
+                            <li><a class="underline" target="_blank" href="https://99flowers.cz/collections/kvetinove-predplatne/products/zkusebni-kvetinovy-box">99 flowers</a></li>
+                        </ul>
+
+                        <p class="text-base/7 text-gray-600">
+                            Prípadné doručenie, prosím, zvoľte na adresu:<br/>
+                            Bulharská 10, 10100 Praha Vršovice
+                        </p>
+
+                    </dd>
+                </div>
+
+            </dl>
+
+
+
+        </section>
+
 
         <div class="relative mx-auto max-w-5xl text-base/7 text-gray-700 mb-12 px-12">
             <h2 id="kostol" class="text-4xl sm:text-5xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin">Piaristický kostol sv.&nbsp;Františka&nbsp;Xaverského</h2>
@@ -1462,7 +1543,7 @@
             }
         });
     }
-    
+
     var arrowElement = document.querySelector('#scrollarrow');
 
     window.addEventListener("scroll", function(e) {

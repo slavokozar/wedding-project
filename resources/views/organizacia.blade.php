@@ -36,50 +36,95 @@
             svadobného dňa</h1>
 
 
+
+
         <div class="w-full max-w-3xl mx-auto">
 
+
+            <ol class="relative before:absolute before:inset-0 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+
+
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-6 h-6 rounded-full bg-white shadow-sm inset-shadow-xs -start-3 mt-1"></div>
+                    <time class="mb-1 pl-3 notoserifdisplay">Marec 1993</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Slavko sa narodil v Prešove</h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-6 h-6 rounded-full bg-white shadow-sm inset-shadow-xs -start-3 mt-1"></div>
+                    <time class="mb-1 pl-3 notoserifdisplay">Marec 1993</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-6 h-6 rounded-full bg-white shadow-sm inset-shadow-xs -start-3 mt-1"></div>
+                    <time class="mb-1 pl-3 notoserifdisplay">Marec 1993</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-6 h-6 rounded-full bg-white shadow-sm inset-shadow-xs -start-3 mt-1"></div>
+                    <time class="mb-1 pl-3 notoserifdisplay">Marec 1993</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-6 h-6 rounded-full bg-white shadow-sm inset-shadow-xs -start-3 mt-1"></div>
+                    <time class="mb-1 pl-3 notoserifdisplay">Marec 1993</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                </li>
+                <li class="mb-10 ms-4">
+                    <div class="absolute w-6 h-6 rounded-full bg-white shadow-sm inset-shadow-xs -start-3 mt-1"></div>
+                    <time class="mb-1 pl-3 notoserifdisplay">Marec 1993</time>
+                    <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Application UI code in Tailwind CSS</h3>
+                    <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+                </li>
+            </ol>
+
+
+
             <!-- Vertical Timeline #3 -->
-            <div
-                class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+{{--            <div--}}
+{{--                class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">--}}
 
-                <!-- Item #1 -->
-                <div class="relative">
-                    <div class="md:flex items-center md:space-x-4 mb-3">
-                        <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
-                            <!-- Icon -->
-                            <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 p-2">
-                                <svg fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M126.03 744.104H72.219c-17.312 0-31.263-13.802-31.263-30.72v-488.11c0-16.912 13.955-30.72 31.263-30.72h879.565c17.311 0 31.252 13.801 31.252 30.72v488.11c0 16.926-13.937 30.72-31.252 30.72h-42.639c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48h42.639c39.843 0 72.212-32.038 72.212-71.68v-488.11c0-39.635-32.373-71.68-72.212-71.68H72.219c-39.833 0-72.223 32.049-72.223 71.68v488.11c0 39.639 32.387 71.68 72.223 71.68h53.811c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48z"/>
-                                    <path
-                                        d="M693.76 744.104H334.848c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48H693.76c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zM993.28 467.83h-97.812c-16.962 0-30.72-13.758-30.72-30.72V193.531c0-11.311-9.169-20.48-20.48-20.48s-20.48 9.169-20.48 20.48V437.11c0 39.583 32.097 71.68 71.68 71.68h97.812c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48z"/>
-                                    <path
-                                        d="M884.53 764.584c0-45.238-36.679-81.92-81.92-81.92-45.234 0-81.92 36.686-81.92 81.92 0 45.241 36.682 81.92 81.92 81.92 45.245 0 81.92-36.675 81.92-81.92zm40.96 0c0 67.866-55.014 122.88-122.88 122.88-67.859 0-122.88-55.017-122.88-122.88 0-67.856 55.024-122.88 122.88-122.88 67.863 0 122.88 55.021 122.88 122.88zm-611.12 0c0-45.234-36.686-81.92-81.92-81.92-45.241 0-81.92 36.682-81.92 81.92 0 45.245 36.675 81.92 81.92 81.92 45.238 0 81.92-36.679 81.92-81.92zm40.96 0c0 67.863-55.021 122.88-122.88 122.88-67.866 0-122.88-55.014-122.88-122.88 0-67.859 55.017-122.88 122.88-122.88 67.856 0 122.88 55.024 122.88 122.88z"/>
-                                    <path
-                                        d="M698.03 745.894H334.848c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48H698.03c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zm305.49-156.07h-84.746c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48h84.746c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zM725.76 468.085V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96zm-243.825-40.96V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96zm-243.825-40.96V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96z"/>
-                                </svg>
-                            </div>
-                            <!-- Date -->
-                            <time class="font-caveat font-medium text-xl text-bordeaux md:w-28">14:00</time>
-                        </div>
-                        <!-- Title -->
-                        <div class="text-bordeaux ml-14"><span class="font-bold">Svadobný autobus</span></div>
-                    </div>
-                    <!-- Card -->
-                    <div class="bg-white p-4 rounded border border-slate-200 text-bordeaux shadow ml-14 md:ml-44">
-                        <p>
-                            Autobus pripravený pre odvoz svadobčanov od ich ubytovaní v Trenčianskych Tepliciach ku kostolu v Trenčíne.
-                        </p>
+{{--                <!-- Item #1 -->--}}
+{{--                <div class="relative">--}}
+{{--                    <div class="md:flex items-center md:space-x-4 mb-3">--}}
+{{--                        <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">--}}
+{{--                            <!-- Icon -->--}}
+{{--                            <div--}}
+{{--                                class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 p-2">--}}
+{{--                                <svg fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                    <path--}}
+{{--                                        d="M126.03 744.104H72.219c-17.312 0-31.263-13.802-31.263-30.72v-488.11c0-16.912 13.955-30.72 31.263-30.72h879.565c17.311 0 31.252 13.801 31.252 30.72v488.11c0 16.926-13.937 30.72-31.252 30.72h-42.639c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48h42.639c39.843 0 72.212-32.038 72.212-71.68v-488.11c0-39.635-32.373-71.68-72.212-71.68H72.219c-39.833 0-72.223 32.049-72.223 71.68v488.11c0 39.639 32.387 71.68 72.223 71.68h53.811c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48z"/>--}}
+{{--                                    <path--}}
+{{--                                        d="M693.76 744.104H334.848c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48H693.76c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zM993.28 467.83h-97.812c-16.962 0-30.72-13.758-30.72-30.72V193.531c0-11.311-9.169-20.48-20.48-20.48s-20.48 9.169-20.48 20.48V437.11c0 39.583 32.097 71.68 71.68 71.68h97.812c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48z"/>--}}
+{{--                                    <path--}}
+{{--                                        d="M884.53 764.584c0-45.238-36.679-81.92-81.92-81.92-45.234 0-81.92 36.686-81.92 81.92 0 45.241 36.682 81.92 81.92 81.92 45.245 0 81.92-36.675 81.92-81.92zm40.96 0c0 67.866-55.014 122.88-122.88 122.88-67.859 0-122.88-55.017-122.88-122.88 0-67.856 55.024-122.88 122.88-122.88 67.863 0 122.88 55.021 122.88 122.88zm-611.12 0c0-45.234-36.686-81.92-81.92-81.92-45.241 0-81.92 36.682-81.92 81.92 0 45.245 36.675 81.92 81.92 81.92 45.238 0 81.92-36.679 81.92-81.92zm40.96 0c0 67.863-55.021 122.88-122.88 122.88-67.866 0-122.88-55.014-122.88-122.88 0-67.859 55.017-122.88 122.88-122.88 67.856 0 122.88 55.024 122.88 122.88z"/>--}}
+{{--                                    <path--}}
+{{--                                        d="M698.03 745.894H334.848c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48H698.03c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zm305.49-156.07h-84.746c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48h84.746c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zM725.76 468.085V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96zm-243.825-40.96V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96zm-243.825-40.96V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96z"/>--}}
+{{--                                </svg>--}}
+{{--                            </div>--}}
+{{--                            <!-- Date -->--}}
+{{--                            <time class="font-caveat font-medium text-xl text-bordeaux md:w-28">14:00</time>--}}
+{{--                        </div>--}}
+{{--                        <!-- Title -->--}}
+{{--                        <div class="text-bordeaux ml-14"><span class="font-bold">Svadobný autobus</span></div>--}}
+{{--                    </div>--}}
+{{--                    <!-- Card -->--}}
+{{--                    <div class="bg-white p-4 rounded border border-slate-200 text-bordeaux shadow ml-14 md:ml-44">--}}
+{{--                        <p>--}}
+{{--                            Autobus pripravený pre odvoz svadobčanov od ich ubytovaní v Trenčianskych Tepliciach ku kostolu v Trenčíne.--}}
+{{--                        </p>--}}
 
-                        <div id="map-autobus"></div>
-                    </div>
-                </div>
-            </div>
+{{--                        <div id="map-autobus"></div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
         </div>
 
 
-            <h2>Dalsie...</h2>
 
         <div class="w-full max-w-3xl mx-auto">
 

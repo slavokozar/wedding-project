@@ -34,6 +34,35 @@
         <div id="info" style="padding: 10px; background: #f9f9f9;"></div>
 
         <div id="map"></div>
+
+        <div>
+            <p>Ul, 17. novembra 32, 914 51 Trenčianske Teplice, Slovensko</p>
+
+            natura = {lat: 48.907768404911835, lng: 18.172837433548533};
+            Ľudovíta Štúra 6, 914 51 Trenčianske Teplice, Slovensko
+
+
+            fontis
+            {lat: 48.90793173697368, lng: 18.16912355815917};
+            Hurbanova 358, 914 51 Trenčianske Teplice, Slovensko
+            http://www.penzionfontis.sk/
+
+
+            const cityAp = {lat: 48.91134851865472, lng: 18.16650788146855};
+            Gen. M. R. Štefánika, Generála Milana Rastislava Štefánika 625/16, 914 51 Trenčianske Teplice, Slovensko
+            http://www.cityap.sk/
+
+            const garni = {lat: 48.90710511880918, lng: 18.17130257079269};
+            Pod Klepáčom 398, 914 51 Trenčianske Teplice, Slovensko
+
+            const orava = {lat: 48.90907206084482, lng: 18.173454822533774};
+            Kúpeľná 4, 914 51 Trenčianske Teplice, Slovensko
+            http://aptorava.sk/
+
+            const city = {lat: 48.90847665702842, lng: 18.169266338175795};
+            Bagarova 1, 914 51 Trenčianske Teplice,
+            https://www.ubytovaniecity.sk/
+        </div>
     </div>
 </div>
 
@@ -43,31 +72,20 @@
         // 48.9084993,18.1716913
         const center = {lat: 48.9092, lng: 18.170213};
         const kursalon = {lat: 48.90816641700556, lng: 18.17642979907453};
-        Ul, 17. novembra 32, 914 51 Trenčianske Teplice, Slovensko
+
 
         const natura = {lat: 48.907768404911835, lng: 18.172837433548533};
-        Ľudovíta Štúra 6, 914 51 Trenčianske Teplice, Slovensko
 
 
         const fontis = {lat: 48.90793173697368, lng: 18.16912355815917};
-        Hurbanova 358, 914 51 Trenčianske Teplice, Slovensko
-        http://www.penzionfontis.sk/
-
 
         const cityAp = {lat: 48.91134851865472, lng: 18.16650788146855};
-        Gen. M. R. Štefánika, Generála Milana Rastislava Štefánika 625/16, 914 51 Trenčianske Teplice, Slovensko
-        http://www.cityap.sk/
 
         const garni = {lat: 48.90710511880918, lng: 18.17130257079269};
-        Pod Klepáčom 398, 914 51 Trenčianske Teplice, Slovensko
 
         const orava = {lat: 48.90907206084482, lng: 18.173454822533774};
-        Kúpeľná 4, 914 51 Trenčianske Teplice, Slovensko
-        http://aptorava.sk/
 
         const city = {lat: 48.90847665702842, lng: 18.169266338175795};
-        Bagarova 1, 914 51 Trenčianske Teplice,
-        https://www.ubytovaniecity.sk/
 
         // const parkac = {lat: 48.8960324, lng: 18.0428914};
         // const kostol = {lat: 48.8947361, lng: 18.0404259};
