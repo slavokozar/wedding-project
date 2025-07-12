@@ -41,7 +41,7 @@ Route::prefix('manag')->middleware('auth')->group(function () {
 
     Route::get('/tables', function (Request $request) {
         $tables = [];
-        for($i = 1; $i <= 12; $i++){
+        for($i = 1; $i <= 18; $i++){
             $tables[$i] = [];
         }
 
