@@ -21,8 +21,6 @@
 @source "../views";
 @plugin "daisyui";
 
-/*@source "../views";*/
-
 @font-face {
     font-family: PPPlayground;
     src: url("/public/fonts/PPPlayground/PPPlayground-Thin.otf") format("opentype");

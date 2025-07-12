@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\InvitationController;
+use App\Models\Guest;
 use App\Models\InvitationAccess;
 use App\Models\NutritionalRequirements;
 use App\Models\Invitation;
@@ -37,6 +38,24 @@ Route::prefix('manag')->middleware('auth')->group(function () {
 
     Volt::route('/guests', 'guests.index')->name('admin.guests');
     Volt::route('/invitations', 'invitations.index')->name('admin.invitations');
+
+    Route::get('/tables', function (Request $request) {
+        $tables = [];
+        for($i = 1; $i <= 12; $i++){
+            $tables[$i] = [];
+        }
+
+
+        foreach(Guest::all() as $guest){
+            if($guest->table_id !== null){
+                $tables[$guest->table_id][] = $guest;
+            }
+
+        }
+
+        return view('manag.tables', compact('tables'));
+    })->name('admin.tables');
+
     Route::get('/accesses', function (Request $request) {
         $accesses = InvitationAccess::with('invitation.mainGuest')->orderBy('created_at', 'desc')->paginate(20);
 
