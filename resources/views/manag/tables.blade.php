@@ -41,7 +41,7 @@
     <div class="tables">
     @foreach($tables as $i => $guests)
         <div>
-            <h2>Stol {{$i}}</h2>
+            <h2>Stol {{$i}} [ {{ count($guests) }} ]</h2>
             <ul>
                 @foreach($guests as $guest)
                     <li>{{ $guest->name }}</li>
