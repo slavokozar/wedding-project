@@ -143,6 +143,7 @@ new class extends Component {
             @endscope
 
             @scope('cell_table', $guest, $tables)
+            Stol {{$guest->table_id}}
             <x-mary-select
                     icon="gmdi.table-bar-o"
                     :options="$tables"
