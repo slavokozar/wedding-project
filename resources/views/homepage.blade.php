@@ -896,7 +896,7 @@
         </div>
 
         <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
-            <h2 class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Organizácia svadobného dňa</h2>
+            <h2 id="organizacia" class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Organizácia svadobného dňa</h2>
 
             <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
                 <div class="relative">
@@ -1143,7 +1143,7 @@
         </section>
 
         <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
-        <h2 class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Dôležité otázky a odpovede</h2>
+        <h2 id="otazky" class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Dôležité otázky a odpovede</h2>
 
             <dl class="mt-20 divide-y divide-gray-900/10">
                 <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
