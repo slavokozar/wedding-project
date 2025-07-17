@@ -924,7 +924,7 @@
                         </div>
                         <!-- Title -->
                         <div class="text-bordeaux ml-20">
-                            <span class="font-semibold">Stretnutie</span> na Mierovom Námestí v Trenčíne
+                            <span class="font-semibold">Stretnutie</span> na Mierovom námestí v Trenčíne
                         </div>
                     </div>
                 </div>
@@ -1011,7 +1011,7 @@
                     </div>
                     <!-- Card -->
                     <div class="bg-white p-4 border border-slate-200 text-bordeaux shadow ml-20 md:ml-64">
-                        Spoločná cesta autobusom na svadobnú hostinu v <span class="font-semibold">Kursalóne</span> v <span class="font-semibold">Trenčianských Tepliciach</span>.
+                        Spoločná cesta autobusom na svadobnú hostinu v <span class="font-semibold">Kursalóne</span> v <span class="font-semibold">Trenčianskych Tepliciach</span>.
                         <br/>
                         Viac informácií o doprave na svadbu v sekcii <a class="underline" href="#doprava">doprava</a>.
                     </div>
@@ -1130,8 +1130,9 @@
                     </div>
                     <!-- Card -->
                     <div class="bg-white p-4 rounded border border-slate-200 text-bordeaux shadow ml-20 md:ml-64">
-                        Tradičný obrad, ktorý symbolizuje prechod nevesty zo slobodného dievčaťa na vydatú ženu. Neveste
-                        sa sníma vienok a na hlavu sa jej kladie čepiec ako znak manželstva.
+                        Tradičný obrad, ktorý symbolizuje prechod nevesty zo slobodného dievčaťa na vydatú ženu.
+                        <br/>
+                        Neveste sa sníma vienok a na hlavu sa jej kladie čepiec ako znak manželstva.
                         <br/>
                         Nasledovať bude <span class="font-semibold">Redový Tanec</span> - veselá svadobná tradícia, pri
                         ktorej si hostia môžu zatancovať s nevestou výmenou za malý finančný príspevok.
@@ -1154,11 +1155,11 @@
                         <h3 class="inline-block text-xl notoserifdisplay font-thin">Lokalita</h3>
                     </dt>
                     <dd class="mt-4 lg:col-span-8 lg:mt-0">
-                        <p class="text-base/7 text-gray-600 mb-4"><span class="font-bold">Svadobný obrad</span> sa uskutoční v <a href="#kostol" class="underline">kostole sv. Františka Xaverského na Mierovom Námestí v Trenčíne</a>.</p>
+                        <p class="text-base/7 text-gray-600 mb-4"><span class="font-bold">Svadobný obrad</span> sa uskutoční v <a href="#kostol" class="underline">kostole sv. Františka Xaverského na Mierovom námestí v Trenčíne</a>.</p>
 
-                        <p class="text-base/7 text-gray-600">Na svadobnú <span class="font-bold">hostinu a tanečnú zábavu</span> sa presunieme do <span class="font-bold">Kursalónu v Trenčianských Tepliciach</span>, kde Vám aj sprostredkujeme ubytovanie.</p>
+                        <p class="text-base/7 text-gray-600">Na svadobnú <span class="font-bold">hostinu a tanečnú zábavu</span> sa presunieme do <span class="font-bold">Kursalónu v Trenčianskych Tepliciach</span>, kde Vám aj sprostredkujeme ubytovanie.</p>
 
-                        <p class="text-base/7 text-gray-600">Pre presun medzi Trenčianskými Teplicami a Trenčínom bude k dispozícií <a href="#doprava" class="underline"><span class="font-bold">svadobný autobus</span></a>.</p>
+                        <p class="text-base/7 text-gray-600">Pre presun medzi Trenčianskymi Teplicami a Trenčínom bude k dispozícií <a href="#doprava" class="underline"><span class="font-bold">svadobný autobus</span></a>.</p>
                     </dd>
                 </div>
 
@@ -1191,7 +1192,7 @@
                     </dt>
                     <dd class="mt-4 lg:col-span-8 lg:mt-0">
                         <p class="text-base/7 text-gray-600">
-                            Už nejaký čas žijeme v <span class="font-bold">spoločnej domácnosti</span>, v ktorej nám <span class="font-bold">nechýba</span> žiadne praktické <span class="font-bold">vybavenie</span>..</p>
+                            Už nejaký čas žijeme v <span class="font-bold">spoločnej domácnosti</span>, v ktorej nám <span class="font-bold">nechýba</span> žiadne praktické <span class="font-bold">vybavenie</span>.</p>
                         <p class="text-base/7 text-gray-600 mb-4">Hneď po svadbe odchádzame na <span class="font-bold">svadobnú cestu</span> na Srí Lanku, a preto nás najviac <span class="font-bold">poteší príspevok</span> na naše dobrodružstvá na ostrove čaju.</p>
 
                         <p class="text-base/7 text-gray-600">Ak by ste však trvali na fyzickom dare, ktorý nám bude pripomínať tento výnimočný deň, budeme vďační za darčekovú poukážku z niektorého z nasledujúcich obchodov.</p>
@@ -1216,13 +1217,13 @@
                     <dd class="mt-4 lg:col-span-8 lg:mt-0">
                         <p class="text-base/7 text-gray-600 mb-2">Kvety, ktorými nás obdarujete na svadbe, si <span class="font-bold">neužijeme</span>, keďže pár dní <span class="font-bold">po svadbe odchádzame</span> na svadobnú cestu.</p>
 
-                        <p class="text-base/7 text-gray-600 mb-4">Budeme sa však veľmi tešiť, ak nám <span class="font-bold">radosť z kvetov doprajete neskôr</span> – po návrate zo svadobnej cesty. <span class="font-bold">Vďaka darovanej poukážke</span> si kyticu radi vyzdvihneme v priebehu roka a znova si tak <span class="font-bold">pripomenieme výnimočnú atmosféru</span> nášho svadobného dňa.</p>
+                        <p class="text-base/7 text-gray-600 mb-4">Budeme sa však veľmi tešiť, ak nám <span class="font-bold">radosť z kvetov doprajete neskôr</span> – po návrate zo svadobnej cesty. <br/><span class="font-bold">Vďaka darovanej poukážke</span> si kyticu radi vyzdvihneme v priebehu roka a znova si tak <span class="font-bold">pripomenieme výnimočnú atmosféru</span> nášho svadobného dňa.</p>
 
                         <p class="text-base/7 text-gray-600 mb-2">Tipy na miesta, kde objednať:</p>
 
                         <ul class="max-w-md space-y-2 list-disc list-inside">
                             <li><a class="underline" target="_blank" href="https://www.kytkyodpotoka.cz/produkt/darkovy-poukaz/">Kytky od potoka</a></li>
-                            <li><a class="underline" target="_blank" href="https://www.green-decor.cz/product/darkovy-poukaz/">green decor</a> - paltba iba prevodom z českého účtu</li>
+                            <li><a class="underline" target="_blank" href="https://www.green-decor.cz/product/darkovy-poukaz/">green decor</a> - platba iba prevodom z českého účtu</li>
                             <li><a class="underline" target="_blank" href="https://99flowers.cz/collections/kvetinove-predplatne/products/zkusebni-kvetinovy-box">99 flowers</a></li>
                         </ul>
 
@@ -1246,7 +1247,7 @@
         </div>
 
         <div class="relative mx-auto max-w-5xl mb-30 md:px-12">
-            <img class="mx-auto w-full bg-gray-50 object-cover lg:absolute lg:w-2/5" src="{{ asset('img/namestie-kostol.jpg') }}" alt="Piaristický kostol sv. Františka Xaverského V Trenčíne na Mierovom Námestí" />
+            <img class="mx-auto w-full bg-gray-50 object-cover lg:absolute lg:w-2/5" src="{{ asset('img/namestie-kostol.jpg') }}" alt="Piaristický kostol sv. Františka Xaverského V Trenčíne na Mierovom námestí" />
             <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
                 <div class="md:px-6 md:pt-16 md:pb-24 lg:col-start-2 lg:px-5 lg:pt-32">
                     <div class="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
@@ -1288,11 +1289,11 @@
             <h3 class="text-2xl sm:text-3xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin mb-6">Svadobný autobus</h3>
 
             <p class="text-gray-700 mb-3">
-                Pre hostí ubytovaných v mieste konania svadobnej hostiny - <span class="font-semibold">Trenčianských Tepliciach</span> - bude pripravený svadobný autobus, ktorý môžu využiť pre dopravu ku kostolu Sv. Františka Xaverského.
+                Pre hostí ubytovaných v mieste konania svadobnej hostiny - <span class="font-semibold">v Trenčianskych Tepliciach</span> - bude pripravený svadobný autobus, ktorý môžu využiť pre dopravu ku kostolu Sv. Františka Xaverského.
             </p>
 
             <p class="text-gray-700 mb-3">
-                Autobus bude Trenčianských Teplíc vyrážať o <span class="font-semibold">14:00</span> a všetkých hostí dopraví do vzdialenosti ~ <span class="font-semibold">100m od kostola</span>
+                Autobus bude z Trenčianskych Teplíc vyrážať o <span class="font-semibold">14:00</span> a všetkých hostí dopraví do vzdialenosti ~ <span class="font-semibold">100m od kostola</span>
             </p>
 
             <div id="map-doprava" style="height: 400px;" class="mb-10"></div>
@@ -1300,7 +1301,7 @@
             <h3 class="text-2xl sm:text-3xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin mb-6">Parkovanie</h3>
 
             <p class="text-gray-700">
-                V prípade, že preferujete individuálnu prepravu <span class="font-semibold">vlastným autom</span>, alebo máte v pláne doraziť priamo do kostola odporúčame parkovanie v nedalekom <span class="font-semibold">parkovacom dome</span> vo vzialenosti <span class="font-semibold">~300m chôdze od kostola</span>.
+                V prípade, že preferujete individuálnu prepravu <span class="font-semibold">vlastným autom</span>, alebo máte v pláne doraziť priamo do kostola odporúčame parkovanie v neďalekom <span class="font-semibold">parkovacom dome</span> vo vzialenosti <span class="font-semibold">~300m chôdze od kostola</span>.
             </p>
 
             <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 sm:mt-10 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
