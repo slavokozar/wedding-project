@@ -1311,7 +1311,7 @@
                 </div>
                 <div class="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
                     <dt class="text-base/7 text-gray-600">Adresa</dt>
-                    <dd class="order-first text-xl font-semibold tracking-tight text-gray-900">Palackého 101, Trenčín</dd>
+                    <dd class="order-first text-xl font-semibold tracking-tight text-gray-900">Palackého 29, Trenčín</dd>
                 </div>
                 <div class="flex flex-col gap-y-3 border-l border-gray-900/10 pl-6">
                     <dt class="text-sm/6 text-gray-600">GPS poloha</dt>
