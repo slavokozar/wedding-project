@@ -1198,7 +1198,7 @@
                         <p class="text-base/7 text-gray-600">Ak by ste však trvali na fyzickom dare, ktorý nám bude pripomínať tento výnimočný deň, budeme vďační za darčekovú poukážku z niektorého z nasledujúcich obchodov.</p>
                         <p class="text-base/7 text-gray-600 mb-2"> Následne sa s Vami radi podelíme o radosť z toho, čo sme si za ňu vybrali.</p>
                         <ul class="max-w-md space-y-2 list-disc list-inside">
-                            <li><a class="underline" target="_blank" href="https://www.martinus.sk/seria/darcekove-poukazky-martinus-sk">martinus.sk</a> - radi si knihu, alebo platňu od Vás odložíme v našej knižnici</li>
+                            <li><a class="underline" target="_blank" href="https://www.martinus.sk/seria/darcekove-poukazky-martinus-sk">martinus.sk</a> - radi si knihu alebo platňu od Vás odložíme v našej knižnici</li>
                             <li><a class="underline" target="_blank" href="https://www.alza.cz/SK/gaming/alza-poukazy/18873911.htm">alza.cz</a> - praktický darček do domácnosti</li>
                             <li><a class="underline" target="_blank" href="https://www.kofio.cz/darky/darkovy-poukaz/612">kofio.cz</a> - káva a príslušenstvo - šálky, filtre, mlynčeky...</li>
                             <li><a class="underline" target="_blank" href="https://www.coffeesheep.sk/">CoffeeSheep</a> - náš najobľúbenejší zdroj kávy</li>
