@@ -1301,7 +1301,7 @@
             <h3 class="text-2xl sm:text-3xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin mb-6">Parkovanie</h3>
 
             <p class="text-gray-700">
-                V prípade, že preferujete individuálnu prepravu <span class="font-semibold">vlastným autom</span> alebo máte v pláne doraziť priamo do kostola odporúčame parkovanie v neďalekom <span class="font-semibold">parkovacom dome</span> vo vzdialenosti <span class="font-semibold">~300m chôdze od kostola</span>.
+                V prípade, že preferujete individuálnu prepravu <span class="font-semibold">vlastným autom</span> alebo máte v pláne doraziť priamo do kostola, odporúčame parkovanie v neďalekom <span class="font-semibold">parkovacom dome</span> vo vzdialenosti <span class="font-semibold">~300m chôdze od kostola</span>.
             </p>
 
             <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 sm:mt-10 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
