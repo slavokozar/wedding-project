@@ -1148,6 +1148,23 @@
             <dl class="mt-20 divide-y divide-gray-900/10">
                 <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
                     <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-4">
+                        <svg class="inline-block max-w-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 6H12.01M9 20L3 17V4L5 5M9 20L15 17M9 20V14M15 17L21 20V7L19 6M15 17V14M15 6.2C15 7.96731 13.5 9.4 12 11C10.5 9.4 9 7.96731 9 6.2C9 4.43269 10.3431 3 12 3C13.6569 3 15 4.43269 15 6.2Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <h3 class="inline-block text-xl notoserifdisplay font-thin">Lokalita</h3>
+                    </dt>
+                    <dd class="mt-4 lg:col-span-8 lg:mt-0">
+                        <p class="text-base/7 text-gray-600 mb-4"><span class="font-bold">Svadobný obrad</span> sa uskutoční v <a href="#kostol" class="underline">kostole sv. Františka Xaverského na Mierovom Námestí v Trenčíne</a>.</p>
+
+                        <p class="text-base/7 text-gray-600">Na svadobnú <span class="font-bold">hostinu a tanečnú zábavu</span> sa presunieme do <span class="font-bold">Kursalónu v Trenčianských Tepliciach</span>, kde Vám aj sprostredkujeme ubytovanie.</p>
+
+                        <p class="text-base/7 text-gray-600">Pre presun medzi Trenčianskými Teplicami a Trenčínom bude k dispozícií <a href="#doprava" class="underline"><span class="font-bold">svadobný autobus</span></a>.</p>
+                    </dd>
+                </div>
+
+
+                <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
+                    <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-4">
                         <svg class="inline-block max-w-24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" version="1.1" id="Capa_1" viewBox="0 0 95.844 95.844" xml:space="preserve">
                             <polygon points="47.918,39.699 52.742,12.66 48.872,7.32 50.771,3.511 45.066,3.511 46.969,7.32 43.093,12.66   "/>
                             <path d="M75.541,86.669h7.621l-1.902-32.388L77.443,11.43L59.35,3.812l-1.905-3.809l-1.903,7.618l-7.623,43.807L40.301,7.618    L38.393,0L36.49,3.809l-18.094,7.617l-3.811,42.855l-1.902,32.388h7.619l6.952-42.032l2.568,9.639l-7.621,32.045l21.905,9.523    l3.809-18.743l3.807,18.743l21.909-9.523l-7.625-32.045l2.57-9.639L75.541,86.669z M67.999,27.259l-7.741,1.073l5.119-6.312    l2.622,2.026V27.259z"/>
