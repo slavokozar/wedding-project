@@ -1239,7 +1239,7 @@
 
 
         <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
-            <h2 id="kostol" class="text-4xl sm:text-5xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin">Piaristický kostol sv.&nbsp;Františka&nbsp;Xaverského</h2>
+            <h2 id="kostol" class="text-3xl sm:text-5xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin">Piaristický kostol sv.&nbsp;Františka&nbsp;Xaverského</h2>
 
             <img class="mx-auto w-full bg-gray-50 object-cover lg:absolute lg:w-2/5" src="{{ asset('img/namestie-kostol.jpg') }}" alt="Piaristický kostol sv. Františka Xaverského V Trenčíne na Mierovom námestí" />
             <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
