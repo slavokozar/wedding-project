@@ -1144,8 +1144,7 @@
         </section>
 
         <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
-        <h2 id="otazky" class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Dôležité otázky a odpovede</h2>
-
+            <h2 id="otazky" class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Dôležité otázky a odpovede</h2>
             <dl class="mt-20 divide-y divide-gray-900/10">
                 <div class="py-8 first:pt-0 last:pb-0 lg:grid lg:grid-cols-12 lg:gap-8">
                     <dt class="text-base/7 font-semibold text-gray-900 lg:col-span-4">
@@ -1236,17 +1235,12 @@
                 </div>
 
             </dl>
-
-
-
         </section>
 
 
-        <div class="relative mx-auto max-w-5xl text-base/7 text-gray-700 mb-12 px-12">
+        <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
             <h2 id="kostol" class="text-4xl sm:text-5xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin">Piaristický kostol sv.&nbsp;Františka&nbsp;Xaverského</h2>
-        </div>
 
-        <div class="relative mx-auto max-w-5xl mb-30 md:px-12">
             <img class="mx-auto w-full bg-gray-50 object-cover lg:absolute lg:w-2/5" src="{{ asset('img/namestie-kostol.jpg') }}" alt="Piaristický kostol sv. Františka Xaverského V Trenčíne na Mierovom námestí" />
             <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
                 <div class="md:px-6 md:pt-16 md:pb-24 lg:col-start-2 lg:px-5 lg:pt-32">
@@ -1280,10 +1274,10 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="relative mx-auto max-w-5xl text-base/7 text-gray-700 mb-12 md:px-12">
+        <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
             <h2 id="doprava" class="text-4xl sm:text-5xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin mb-6">Doprava</h2>
 
             <h3 class="text-2xl sm:text-3xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin mb-6">Svadobný autobus</h3>
@@ -1334,7 +1328,7 @@
                     </dd>
                 </div>
             </dl>
-        </div>
+        </section>
 
     </main>
 </div>
