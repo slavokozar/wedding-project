@@ -1238,10 +1238,10 @@
         </section>
 
 
-        <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
-            <h2 id="kostol" class="text-3xl sm:text-5xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin">Piaristický kostol sv.&nbsp;Františka&nbsp;Xaverského</h2>
-
+        <section class="relative mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
+            <h2 id="kostol" class="text-3xl sm:text-5xl tracking-tight text-pretty text-gray-900 notoserifdisplay font-thin mb-12 ">Piaristický kostol sv.&nbsp;Františka&nbsp;Xaverského</h2>
             <img class="mx-auto w-full bg-gray-50 object-cover lg:absolute lg:w-2/5" src="{{ asset('img/namestie-kostol.jpg') }}" alt="Piaristický kostol sv. Františka Xaverského V Trenčíne na Mierovom námestí" />
+
             <div class="mx-auto grid max-w-7xl lg:grid-cols-2">
                 <div class="md:px-6 md:pt-16 md:pb-24 lg:col-start-2 lg:px-5 lg:pt-32">
                     <div class="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
