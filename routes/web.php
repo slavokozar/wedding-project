@@ -11,13 +11,12 @@ use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
 
 
-Route::get('/', function () {
-    return view('homepage');
-})->name('dashboard');
+Route::view('/', 'homepage')->name('dashboard');
 
-Route::get('/organizacia', function () {
-    return view('organizacia');
-});
+Route::view('/harmonogram','harmonogram');
+Route::view('/svadobny-den','svadobny-den');
+Route::view('/organizacia','organizacia');
+
 
 Route::get('/ubytovanie', function () {
     return view('ubytovanie');
@@ -74,7 +73,6 @@ Route::get('/pozvanka/{invitation}', [InvitationController::class, 'show'])->nam
 Route::post('/api/invitation', function (Request $request) {
     return Invitation::with('nights', 'mainGuest.restrictions', 'mainGuest.children.restrictions')->whereCode($request->input('code'))->firstOrFail();
 });
-
 Route::put('/api/invitation', function (Request $request) {
     $i = Invitation::with('nights', 'mainGuest.restrictions', 'mainGuest.children.restrictions')->whereCode($request->input('code'))->firstOrFail();
 
@@ -112,7 +110,6 @@ Route::put('/api/invitation', function (Request $request) {
 
     return $i;
 });
-
 Route::get('/api/restrictions', function () {
     return NutritionalRequirements::all();
 });
