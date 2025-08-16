@@ -16,6 +16,12 @@
             'text' => null
         ],
         (object)[
+            'time' => '16:55',
+            'icon' => 'speach.png',
+            'label' => 'Príhovor(y)',
+            'text' => null
+        ],
+        (object)[
             'time' => '17:00',
             'icon' => 'dinner.png',
             'label' => 'Večera',
