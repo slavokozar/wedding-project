@@ -17,7 +17,7 @@
         ],
         (object)[
             'time' => '16:55',
-            'icon' => 'speach.png',
+            'icon' => 'speech.png',
             'label' => 'Príhovor(y)',
             'text' => null
         ],
