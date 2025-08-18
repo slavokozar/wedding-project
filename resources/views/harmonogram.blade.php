@@ -34,7 +34,7 @@
             'text' => null
         ],
         (object)[
-            'time' => '18:30',
+            'time' => '18:20',
             'icon' => 'dance.png',
             'label' => 'Mladomanželský a Rodičovský tanec',
             'text' => 'Prvé tanečné kolo'
@@ -43,7 +43,7 @@
 
 
         (object)[
-            'time' => '19:00 - 19:30',
+            'time' => '18:45 - 19:30',
             'icon' => 'photo.png',
             'label' => 'Fotenie s mladomanzelmi',
             'text' => null
@@ -142,65 +142,6 @@ Nasledovať bude <span class="font-bold">Redový Tanec</span> - veselá svadobn�
 @endphp
 
 @section('main')
-    <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
-        <h2 id="menu" class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Menu</h2>
-
-        <ul>
-            <li>
-                Slepačí vývar s mäsom, zeleninou a rezancami
-            </li>
-            <li>
-                Konfitované bravčové líčka na červenom víne, pečená zelenina na mede, zemiaková kaša
-            </li>
-        </ul>
-        <h3 class="text-bordeaux text-left my-4 text-3xl notoserifdisplay font-thin">Detské Menu</h3>
-        <ul>
-            <li>
-                Plátok kuracích pŕs na grile, masový jus, parená ryža
-            </li>
-        </ul>
-
-
-        <h3 class="text-bordeaux text-left mt-4 text-3xl notoserifdisplay font-thin">Večerný bufet</h3>
-        <p class="notoserifdisplay font-thin mb-4">Podávaný o 21:30</p>
-        <ul>
-            <li>Vyprážaný kurací rezeň</li>
-            <li>Grilované vykostené kuracie stehno, ratatouille zelenina</li>
-            <li>Bravčové výpečky s kyslou kapustou</li>
-            <li class="mb-2">Pečené bravčové koleno na pive s chrenom, horčica, kyslá obloha</li>
-            <li class="mb-2">Domáce bryndzové pirohy</li>
-            <li class="mb-2">Kapustové strapačky</li>
-            <li>Grécky šalát s feta syrom, olivami, červená cibuľka, olivový olej</li>
-            <li>Miešaný listový šalát so zeleninou</li>
-            <li>Zemiakový šalát s majonézou</li>
-            <li>Výber slovenských a svetových syrov s ovocím a ovocným chutney</li>
-        </ul>
-        <h3 class="text-bordeaux text-left mt-4 text-3xl notoserifdisplay font-thin">Neskorý bufet</h3>
-        <p class="notoserifdisplay font-thin mb-4">Podávaný o 00:30</p>
-        <ul>
-            <li>Fazuľová polievka s údeným rebrom</li>
-        </ul>
-
-        <h3 class="text-bordeaux text-left mt-4 text-3xl notoserifdisplay font-thin">Pitný režim</h3>
-        <ul>
-            <li class="mb-2">Pilsner Urquell</li>
-            <li class="mb-2">Víno Reya Elementa Topoľčianky
-                <ul>
-                    <li class="list-disc ml-10">rizling vlašský - suché</li>
-                    <li class="list-disc ml-10">tramín červený - suché</li>
-                    <li class="list-disc ml-10">svätovavrinecké - červené suché</li>
-                </ul>
-            </li>
-            <li class="mb-2 font-bold">Svadobná pálenka - Jablko & Duľa Ražňany 2024</li>
-            <li>Borovička Koniferum</li>
-            <li>Kensington Dry Gin Silver</li>
-            <li>Absolut Vodka</li>
-            <li>Výber kosher destilátov</li>
-            <li>Výber Whisky a Rumov v "pánskom klube"</li>
-        </ul>
-
-    </section>
-
     <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
         <h2 id="organizacia" class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Harmonogram</h2>
 
@@ -418,5 +359,64 @@ Nasledovať bude <span class="font-bold">Redový Tanec</span> - veselá svadobn�
 
         </div>
         <!-- End: Vertical Timeline #3 -->
+    </section>
+
+    <section class="mx-auto max-w-5xl text-base/7 text-gray-700 mb-40 px-10">
+        <h2 id="menu" class="text-bordeaux text-left mb-10 text-5xl notoserifdisplay font-thin">Menu</h2>
+
+        <ul>
+            <li>
+                Slepačí vývar s mäsom, zeleninou a rezancami
+            </li>
+            <li>
+                Konfitované bravčové líčka na červenom víne, pečená zelenina na mede, zemiaková kaša
+            </li>
+        </ul>
+        <h3 class="text-bordeaux text-left my-4 text-3xl notoserifdisplay font-thin">Detské Menu</h3>
+        <ul>
+            <li>
+                Plátok kuracích pŕs na grile, masový jus, parená ryža
+            </li>
+        </ul>
+
+
+        <h3 class="text-bordeaux text-left mt-4 text-3xl notoserifdisplay font-thin">Večerný bufet</h3>
+        <p class="notoserifdisplay font-thin mb-4">Podávaný o 21:30</p>
+        <ul>
+            <li>Vyprážaný kurací rezeň</li>
+            <li>Grilované vykostené kuracie stehno, ratatouille zelenina</li>
+            <li>Bravčové výpečky s kyslou kapustou</li>
+            <li class="mb-2">Pečené bravčové koleno na pive s chrenom, horčica, kyslá obloha</li>
+            <li class="mb-2">Domáce bryndzové pirohy</li>
+            <li class="mb-2">Kapustové strapačky</li>
+            <li>Grécky šalát s feta syrom, olivami, červená cibuľka, olivový olej</li>
+            <li>Miešaný listový šalát so zeleninou</li>
+            <li>Zemiakový šalát s majonézou</li>
+            <li>Výber slovenských a svetových syrov s ovocím a ovocným chutney</li>
+        </ul>
+        <h3 class="text-bordeaux text-left mt-4 text-3xl notoserifdisplay font-thin">Neskorý bufet</h3>
+        <p class="notoserifdisplay font-thin mb-4">Podávaný o 00:30</p>
+        <ul>
+            <li>Fazuľová polievka s údeným rebrom</li>
+        </ul>
+
+        <h3 class="text-bordeaux text-left mt-4 text-3xl notoserifdisplay font-thin">Pitný režim</h3>
+        <ul>
+            <li class="mb-2">Pilsner Urquell</li>
+            <li class="mb-2">Víno Reya Elementa Topoľčianky
+                <ul>
+                    <li class="list-disc ml-10">rizling vlašský - suché</li>
+                    <li class="list-disc ml-10">tramín červený - suché</li>
+                    <li class="list-disc ml-10">svätovavrinecké - červené suché</li>
+                </ul>
+            </li>
+            <li class="mb-2 font-bold">Svadobná pálenka - Jablko & Duľa Ražňany 2024</li>
+            <li>Borovička Koniferum</li>
+            <li>Kensington Dry Gin Silver</li>
+            <li>Absolut Vodka</li>
+            <li>Výber kosher destilátov</li>
+            <li>Výber Whisky a Rumov v "pánskom klube"</li>
+        </ul>
+
     </section>
 @endsection
