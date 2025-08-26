@@ -5,11 +5,6 @@
 
     $harmonogram = [
         (object)[
-            'time' => '16:30',
-            'icon' => 'bus.png',
-            'label' => 'Príchod'
-        ],
-        (object)[
             'time' => '16:40',
             'icon' => 'photo.png',
             'label' => 'Spoločná fotografia pred Kursalónom',
@@ -147,6 +142,151 @@ Nasledovať bude <span class="font-bold">Redový Tanec</span> - veselá svadobn�
 
         <div
             class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:ml-[8.75rem] md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+
+            <div class="relative">
+                <div class="md:flex items-center md:space-x-4 mb-3">
+                    <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                        <!-- Icon -->
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 version="1.1" id="_x32_" viewBox="0 0 512 512" xml:space="preserve">
+                                    <g>
+                                        <path class="st0"
+                                              d="M390.305,235.134H237.759v-12.689l-93.676-107.348V72.594h35.682V33.46h-35.682V0h-39.142v33.46H69.26v39.134   h35.681v42.518L11.265,222.444V512h93.782v-88.388c0.03-10.748,8.732-19.45,19.473-19.465c10.741,0.015,19.442,8.717,19.457,19.465   V512h71.575h16.028h6.178h149.737h113.239V361.667L390.305,235.134z M225.387,287.939v211.682h-9.835h-59.203v-76.009   c0-17.584-14.246-31.837-31.829-31.837c-17.584,0-31.845,14.253-31.845,31.837v76.009H23.637V227.09l93.676-107.34V60.214H81.632   V45.833l35.681,0.008V12.372h14.397V45.84h35.682v14.374h-35.682v59.528l93.676,107.348v20.417h159.299L480.93,357.8H237.759   v-69.86H225.387z M488.362,499.621H387.495H237.759V370.18h250.604V499.621z"/>
+                                        <path class="st0"
+                                              d="M349.351,460.676v-52.601h-51.045v58.787h51.045V460.676z M336.979,454.482h-26.3v-34.035h26.3V454.482z"/>
+                                        <path class="st0"
+                                              d="M430.564,460.676v-52.601h-51.045v58.787h51.045V460.676z M418.192,454.482h-26.301v-34.035h26.301V454.482z"/>
+                                        <path class="st0"
+                                              d="M97.493,305.274h54.913v-6.186v-48.726H97.493V305.274z M109.867,262.734h30.167v30.168h-30.167V262.734z"/>
+                                    </g>
+                                </svg>
+                        </div>
+                        <!-- Date -->
+                        <time class="font-caveat text-xl notoserifdisplay font-thin md:w-28 ml-6 md:ml-4 md:-mr-4">14:45</time>
+                    </div>
+                    <!-- Title -->
+                    <div class="text-bordeaux ml-20">
+                        <span class="font-semibold">Stretnutie</span> na Mierovom námestí v Trenčíne
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item #3 -->
+            <div class="relative">
+                <div class="md:flex items-center md:space-x-4 mb-3">
+                    <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                        <!-- Icon -->
+                        <div
+                            class="flex items-center justify-center w-20 h-20 rounded-full bg-white shadow md:order-1 p-2">
+                            <svg fill="#000000" height="800px" width="800px" version="1.1" id="wedding"
+                                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 viewBox="0 0 128 128" xml:space="preserve">
+                                    <polygon points="27.4,27.4 32.5,30.3 27.4,33.2 "/>
+                                <polygon points="37.5,27.4 32.5,30.3 37.5,33.2 "/>
+                                <circle cx="32.5" cy="13.5" r="10.1"/>
+                                <circle cx="89.3" cy="18.5" r="10.1"/>
+                                <path d="M120.2,65.1c0,0,0-0.1-0.1-0.1l-9.2-25.3c-0.4-1.1-1-2.2-1.7-3.1c2.2-4.4,2.3-9.9-0.4-14.5l-6.3-10.9
+                                        c-2.7-4.7-7.7-7.6-13.1-7.6S79,6.5,76.3,11.1L70,22.1c-2.7,4.6-2.6,10-0.4,14.5c-0.7,0.9-1.3,2-1.7,3.1l-5,13.9L56,34.6
+                                        c-1.7-4.8-6.1-8.3-10.8-8.3h-5.1c0,0-7.8,21.9-7.6,22.1c0.2,0.2-7.6-22.1-7.6-22.1h-5.1c-7,0-12.6,5.7-12.6,12.6v30.9
+                                        c0,2.4,2,4.4,4.4,4.4s4.4-2,4.4-4.4V41.4c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3V118c0,3.8,2.8,6.8,6.3,6.8s6.3-3.1,6.3-6.8
+                                        V74.3c0-0.7,0.6-1.3,1.3-1.3s1.3,0.6,1.3,1.3V118c0,3.8,2.8,6.8,6.3,6.8s6.3-3.1,6.3-6.8V41.4c0-0.7,0.6-1.3,1.3-1.3
+                                        c0.5,0,1,0.3,1.2,0.8l9.8,26.9c0.8,2.3,3.4,3.5,5.7,2.7c1.2-0.4,2.1-1.4,2.6-2.5l0,0l8.4-23c0.2-0.5,0.7-0.9,1.3-0.8l0,0l0.4,0
+                                        c0.4,5.8,1,11.4,1.9,16.9c-9.4,14.6-15,36.8-15.4,61.1l0,2.6h51.8l0-2.6c-0.4-24.4-6-46.6-15.4-61.1c0.9-5.4,1.6-11.1,1.9-16.9
+                                        l0.4,0l0,0c0.6,0,1.1,0.3,1.3,0.8l8.4,23l0,0c0.8,2.3,3.4,3.5,5.7,2.6C119.8,69.9,121,67.4,120.2,65.1z M112.7,122.3H66.1
+                                        c0.4-25,6.4-47,15.5-60.6c-1.5-8.5-2.4-17.9-2.4-27.8h2.5L89,47.7c0,0.7,8.1-13.8,8.1-13.8h0h2.5c-0.1,9.9-0.9,19.3-2.4,27.8
+                                        C106.3,75.3,112.4,97.3,112.7,122.3z M107.4,34.5c-2.3-2-5.3-3.2-8.4-3.2H79.8c-3.1,0-6.1,1.1-8.4,3.2c-1.5-3.5-1.3-7.6,0.7-11.2
+                                        l6.3-10.9c2.2-3.8,6.3-6.3,10.9-6.3c4.7,0,8.8,2.5,10.9,6.3l6.3,10.9C108.7,26.9,108.8,31,107.4,34.5z"/>
+                                </svg>
+                        </div>
+                        <!-- Date -->
+                        <time class="font-caveat font-bold text-bordeaux md:w-28 text-3xl -mr-4">15:00</time>
+                    </div>
+                    <!-- Title -->
+                    <div class="text-bordeaux ml-14 text-5xl notoserifdisplay uppercase">
+                        <span class="font-bold">Svadba!</span><br/>
+                        <span class="text-2xl font-thin">Piaristický kostol <br/>sv. Františka Xaverského</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item #4 -->
+            <div class="relative">
+                <div class="md:flex items-center md:space-x-4 mb-3">
+                    <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                        <!-- Icon -->
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                 fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1"
+                                 viewBox="0 0 377.798 377.798" xml:space="preserve">
+                                    <path
+                                        d="M330.348,115.073h-34.232c11.486-8.011,17.037-17.842,15.624-27.707c-2.234-15.588-21.836-26.061-48.778-26.061  c-5.124,0-10.389,0.382-15.649,1.136c-3.462,0.496-6.763,1.251-9.902,2.191c0.494-2.741,0.776-5.544,0.776-8.391  c0-32.062-21.49-56.24-49.987-56.24s-49.987,24.178-49.987,56.24c0,2.701,0.262,5.364,0.719,7.975  c-2.699-0.747-5.513-1.355-8.445-1.775c-5.26-0.753-10.525-1.136-15.649-1.136c-26.942,0-46.544,10.473-48.778,26.061  c-1.414,9.864,4.137,19.696,15.624,27.707H47.45c-9.649,0-17.5,7.851-17.5,17.5v79.458v71.997v76.27c0,9.649,7.851,17.5,17.5,17.5  h282.898c9.649,0,17.5-7.851,17.5-17.5v-76.27v-71.997v-79.458C347.848,122.923,339.998,115.073,330.348,115.073z M249.44,77.29  c4.558-0.653,9.107-0.984,13.521-0.984c20.055,0,33,6.706,33.93,13.189c0.556,3.88-2.993,8.88-9.494,13.377  c-8.1,5.602-19.989,9.853-32.62,11.663c-2.494,0.357-5.075,0.539-7.672,0.539c-13.653,0-25.814-4.86-33.209-9.145  c1.552-1.585,2.955-3.106,4.139-4.462c3.628-4.156,8.438-10.342,12.45-17.789C236.085,80.683,242.478,78.287,249.44,77.29z   M167.9,130.073h41.997v81.958H167.9V130.073z M188.198,15c20.273,0,34.987,17.344,34.987,41.24  c0,23.903-27.576,47.98-34.893,51.042c-7.378-3.311-35.082-27.857-35.082-51.042C153.211,32.344,167.925,15,188.198,15z   M123.021,114.534c-12.631-1.81-24.521-6.061-32.62-11.663c-6.5-4.497-10.05-9.497-9.494-13.377  c0.929-6.483,13.875-13.189,33.93-13.189c4.415,0,8.964,0.331,13.521,0.984c6.249,0.896,12.032,2.924,17.201,5.492  c4.161,7.844,9.282,14.372,13.105,18.71c1.289,1.463,2.828,3.116,4.535,4.836c-7.449,4.182-19.277,8.744-32.506,8.744  C128.095,115.073,125.513,114.892,123.021,114.534z M44.95,132.573c0-1.355,1.145-2.5,2.5-2.5h83.242h0.004H152.9v81.958H44.95  V132.573z M152.9,362.798H47.45c-1.355,0-2.5-1.145-2.5-2.5v-76.27H152.9V362.798z M209.897,361.798H167.9v-77.77h41.997V361.798z   M332.848,360.298c0,1.355-1.145,2.5-2.5,2.5H224.897v-78.77h107.951V360.298z M332.848,269.028H44.95v-41.997h287.898V269.028z   M332.848,212.031H224.897v-81.958h105.451c1.355,0,2.5,1.145,2.5,2.5V212.031z"/>
+                                </svg>
+                        </div>
+                        <!-- Date -->
+                        <time class="font-caveat text-xl notoserifdisplay font-thin md:w-28 ml-6 md:ml-4 md:-mr-4">15:30</time>
+                    </div>
+                    <!-- Title -->
+                    <div class="text-bordeaux ml-20"><span class="font-bold">Gratulácie</span> a spoločné fotenie
+                    </div>
+                </div>
+                <!-- Card -->
+                {{--<div class="bg-white p-4 rounded border border-slate-200 text-bordeaux shadow ml-14 md:ml-44">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</div>--}}
+            </div>
+
+            <div class="relative">
+                <div class="md:flex items-center md:space-x-4 mb-3">
+                    <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                        <!-- Icon -->
+                        <div
+                            class="flex items-center justify-center w-10 h-10 rounded-full bg-white shadow md:order-1 p-2">
+                            <svg fill="#000000" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M126.03 744.104H72.219c-17.312 0-31.263-13.802-31.263-30.72v-488.11c0-16.912 13.955-30.72 31.263-30.72h879.565c17.311 0 31.252 13.801 31.252 30.72v488.11c0 16.926-13.937 30.72-31.252 30.72h-42.639c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48h42.639c39.843 0 72.212-32.038 72.212-71.68v-488.11c0-39.635-32.373-71.68-72.212-71.68H72.219c-39.833 0-72.223 32.049-72.223 71.68v488.11c0 39.639 32.387 71.68 72.223 71.68h53.811c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48z"/>
+                                <path
+                                    d="M693.76 744.104H334.848c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48H693.76c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zM993.28 467.83h-97.812c-16.962 0-30.72-13.758-30.72-30.72V193.531c0-11.311-9.169-20.48-20.48-20.48s-20.48 9.169-20.48 20.48V437.11c0 39.583 32.097 71.68 71.68 71.68h97.812c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48z"/>
+                                <path
+                                    d="M884.53 764.584c0-45.238-36.679-81.92-81.92-81.92-45.234 0-81.92 36.686-81.92 81.92 0 45.241 36.682 81.92 81.92 81.92 45.245 0 81.92-36.675 81.92-81.92zm40.96 0c0 67.866-55.014 122.88-122.88 122.88-67.859 0-122.88-55.017-122.88-122.88 0-67.856 55.024-122.88 122.88-122.88 67.863 0 122.88 55.021 122.88 122.88zm-611.12 0c0-45.234-36.686-81.92-81.92-81.92-45.241 0-81.92 36.682-81.92 81.92 0 45.245 36.675 81.92 81.92 81.92 45.238 0 81.92-36.679 81.92-81.92zm40.96 0c0 67.863-55.021 122.88-122.88 122.88-67.866 0-122.88-55.014-122.88-122.88 0-67.859 55.017-122.88 122.88-122.88 67.856 0 122.88 55.024 122.88 122.88z"/>
+                                <path
+                                    d="M698.03 745.894H334.848c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48H698.03c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zm305.49-156.07h-84.746c-11.311 0-20.48 9.169-20.48 20.48s9.169 20.48 20.48 20.48h84.746c11.311 0 20.48-9.169 20.48-20.48s-9.169-20.48-20.48-20.48zM725.76 468.085V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96zm-243.825-40.96V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96zm-243.825-40.96V292.633h-102.4v175.452h102.4zm0 40.96h-102.4c-22.616 0-40.96-18.344-40.96-40.96V292.633c0-22.624 18.342-40.96 40.96-40.96h102.4c22.618 0 40.96 18.336 40.96 40.96v175.452c0 22.616-18.344 40.96-40.96 40.96z"/>
+                            </svg>
+                        </div>
+                        <!-- Date -->
+                        <time class="font-caveat text-xl notoserifdisplay font-thin  md:w-28 ml-6 md:ml-4 md:-mr-4">16:00</time>
+                    </div>
+                    <!-- Title -->
+                    <div class="text-bordeaux ml-20">
+                        <span class="font-semibold">Svadobný autobus</span>
+                    </div>
+                </div>
+                <!-- Card -->
+                <div class="bg-white p-4 border border-slate-200 text-bordeaux shadow ml-20 md:ml-64">
+                    Spoločná cesta autobusom na svadobnú hostinu v <span class="font-semibold">Kursalóne</span> v <span class="font-semibold">Trenčianskych Tepliciach</span>.
+                    <br/>
+                    Viac informácií o doprave na svadbu v sekcii <a class="underline" href="#doprava">doprava</a>.
+                </div>
+            </div>
+
+
+            <div class="relative">
+                <div class="md:flex items-center md:space-x-4 mb-3">
+                    <div class="flex items-center space-x-4 md:space-x-2 md:space-x-reverse">
+                        <!-- Icon -->
+                        <div
+                            class="flex items-center justify-center w-20 h-20 rounded-full bg-white shadow md:order-1 p-2">
+                            <img src="/img/icons/kursalon.png"/>
+                        </div>
+                        <!-- Date -->
+                        <time class="font-caveat font-bold text-bordeaux md:w-28 text-3xl -mr-4">16:30</time>
+                    </div>
+                    <!-- Title -->
+                    <div class="text-bordeaux ml-14 text-2xl notoserifdisplay uppercase">
+                        <span class="font-bold">Príchod do Kursalónu</span><br/>
+                    </div>
+                </div>
+            </div>
 
             @foreach($harmonogram as $item)
                 <div class="relative">
