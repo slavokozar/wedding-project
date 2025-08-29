@@ -17,6 +17,8 @@ Route::view('/harmonogram','harmonogram');
 Route::view('/svadobny-den','svadobny-den');
 Route::view('/organizacia','organizacia');
 
+Route::view('/foto','foto');
+
 
 Route::get('/ubytovanie', function () {
     return view('ubytovanie');
